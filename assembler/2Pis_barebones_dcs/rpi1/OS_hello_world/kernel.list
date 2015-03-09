@@ -1,0 +1,123 @@
+
+build/output.elf:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+00008000 <_start>:
+    8000:	e59fc170 	ldr	ip, [pc, #368]	; 8178 <wait2+0x1c>
+    8004:	e59fb170 	ldr	fp, [pc, #368]	; 817c <wait2+0x20>
+    8008:	e3a04001 	mov	r4, #1
+    800c:	e1a04904 	lsl	r4, r4, #18
+    8010:	e58c4004 	str	r4, [ip, #4]
+    8014:	e3a04001 	mov	r4, #1
+    8018:	e1a04304 	lsl	r4, r4, #6
+    801c:	e3a05001 	mov	r5, #1
+    8020:	e1a05605 	lsl	r5, r5, #12
+    8024:	e1844005 	orr	r4, r4, r5
+    8028:	e58c4008 	str	r4, [ip, #8]
+    802c:	e3a04001 	mov	r4, #1
+    8030:	ee0f4f1c 	mcr	15, 0, r4, cr15, cr12, {0}
+
+00008034 <main>:
+    8034:	e3a04001 	mov	r4, #1
+    8038:	e1a04b84 	lsl	r4, r4, #23
+    803c:	e59c5034 	ldr	r5, [ip, #52]	; 0x34
+    8040:	e0045005 	and	r5, r4, r5
+    8044:	e1540005 	cmp	r4, r5
+    8048:	1afffff9 	bne	8034 <main>
+
+0000804c <wait2_for_rpi1>:
+    804c:	e3a04001 	mov	r4, #1
+    8050:	e1a04b84 	lsl	r4, r4, #23
+    8054:	e59c5034 	ldr	r5, [ip, #52]	; 0x34
+    8058:	e0045005 	and	r5, r4, r5
+    805c:	e3550000 	cmp	r5, #0
+    8060:	1afffff9 	bne	804c <wait2_for_rpi1>
+    8064:	e1a0400b 	mov	r4, fp
+    8068:	e59f5110 	ldr	r5, [pc, #272]	; 8180 <wait2+0x24>
+    806c:	e08b5005 	add	r5, fp, r5
+    8070:	e2844004 	add	r4, r4, #4
+    8074:	ee1f0f3c 	mrc	15, 0, r0, cr15, cr12, {1}
+
+00008078 <read_signal>:
+    8078:	e59c2034 	ldr	r2, [ip, #52]	; 0x34
+    807c:	e4842004 	str	r2, [r4], #4
+    8080:	e1540005 	cmp	r4, r5
+    8084:	1afffffb 	bne	8078 <read_signal>
+    8088:	ee1f1f3c 	mrc	15, 0, r1, cr15, cr12, {1}
+    808c:	e1a0400b 	mov	r4, fp
+    8090:	e0412000 	sub	r2, r1, r0
+    8094:	e5842000 	str	r2, [r4]
+    8098:	e3a06000 	mov	r6, #0
+
+0000809c <transfer>:
+    809c:	e5948000 	ldr	r8, [r4]
+    80a0:	e3560020 	cmp	r6, #32
+    80a4:	11a08638 	lsrne	r8, r8, r6
+    80a8:	12866001 	addne	r6, r6, #1
+    80ac:	02844004 	addeq	r4, r4, #4
+    80b0:	01a088a8 	lsreq	r8, r8, #17
+    80b4:	e2088001 	and	r8, r8, #1
+    80b8:	e3580001 	cmp	r8, #1
+    80bc:	e3a07001 	mov	r7, #1
+    80c0:	e1a07b07 	lsl	r7, r7, #22
+    80c4:	058c701c 	streq	r7, [ip, #28]
+    80c8:	e3a07001 	mov	r7, #1
+    80cc:	e1a07c07 	lsl	r7, r7, #24
+    80d0:	e58c701c 	str	r7, [ip, #28]
+    80d4:	e3a07001 	mov	r7, #1
+    80d8:	e1a07b87 	lsl	r7, r7, #23
+
+000080dc <handshake1>:
+    80dc:	e59c8034 	ldr	r8, [ip, #52]	; 0x34
+    80e0:	e0088007 	and	r8, r8, r7
+    80e4:	e1570008 	cmp	r7, r8
+    80e8:	1afffffb 	bne	80dc <handshake1>
+    80ec:	e3a07001 	mov	r7, #1
+    80f0:	e1a07c07 	lsl	r7, r7, #24
+    80f4:	e58c7028 	str	r7, [ip, #40]	; 0x28
+    80f8:	e3a07001 	mov	r7, #1
+    80fc:	e1a07b07 	lsl	r7, r7, #22
+    8100:	e58c7028 	str	r7, [ip, #40]	; 0x28
+    8104:	e3a07001 	mov	r7, #1
+    8108:	e1a07b87 	lsl	r7, r7, #23
+
+0000810c <handshake2>:
+    810c:	e59c8034 	ldr	r8, [ip, #52]	; 0x34
+    8110:	e0078008 	and	r8, r7, r8
+    8114:	e1580007 	cmp	r8, r7
+    8118:	0afffffb 	beq	810c <handshake2>
+    811c:	e3a07001 	mov	r7, #1
+    8120:	e1a07c87 	lsl	r7, r7, #25
+    8124:	e59c8034 	ldr	r8, [ip, #52]	; 0x34
+    8128:	e0078008 	and	r8, r7, r8
+    812c:	e1570008 	cmp	r7, r8
+    8130:	1affffd9 	bne	809c <transfer>
+    8134:	e3a0400a 	mov	r4, #10
+    8138:	e3a05001 	mov	r5, #1
+    813c:	e1a05805 	lsl	r5, r5, #16
+
+00008140 <blink>:
+    8140:	e58c5028 	str	r5, [ip, #40]	; 0x28
+    8144:	e59f6038 	ldr	r6, [pc, #56]	; 8184 <wait2+0x28>
+
+00008148 <wait1>:
+    8148:	e2466001 	sub	r6, r6, #1
+    814c:	e3560000 	cmp	r6, #0
+    8150:	1afffffc 	bne	8148 <wait1>
+    8154:	e58c501c 	str	r5, [ip, #28]
+    8158:	e59f6024 	ldr	r6, [pc, #36]	; 8184 <wait2+0x28>
+
+0000815c <wait2>:
+    815c:	e2466001 	sub	r6, r6, #1
+    8160:	e3560000 	cmp	r6, #0
+    8164:	1afffffc 	bne	815c <wait2>
+    8168:	e2444001 	sub	r4, r4, #1
+    816c:	e3540000 	cmp	r4, #0
+    8170:	1afffff2 	bne	8140 <blink>
+    8174:	eaffffae 	b	8034 <main>
+    8178:	20200000 	.word	0x20200000
+    817c:	00008188 	.word	0x00008188
+    8180:	00989680 	.word	0x00989680
+    8184:	000f4240 	.word	0x000f4240

@@ -1,0 +1,22 @@
+ENTRY(_reset)
+
+MEMORY
+{
+
+	ram : ORIGIN = 0x8000, LENGTH = 0x10000000
+
+}
+
+SECTIONS
+{
+	.text : {
+		
+			*(.text)
+		} > ram
+
+	.data : { *(.data) } > ram
+	
+	.bss : { *(.bss) } > ram
+
+	
+}
