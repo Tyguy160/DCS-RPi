@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# sudo mount 10.34.235.24:/home/tyler/RPi1 /Backup
+
+
+sudo sshpass -p "raspberry" rsync -acuvz ~/* tyler@10.34.235.24:/RPi1/
+
+echo "Backup using rsync is complete."
+
+#now=$(date +"%m_%d_%Y")
+#sudo dd if=/dev/mmcblk0 of=/Backup/RPiBackup_$now.img bs=1M

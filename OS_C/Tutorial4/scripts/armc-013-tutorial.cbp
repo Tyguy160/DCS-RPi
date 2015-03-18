@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="armc-013-tutorial" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="armc-013">
+         <Option output="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/armc-013" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/../../../arm-none-eabi/include" />
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/include" />
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/include-fixed" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 armc-013" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="armc-013/fast">
+         <Option output="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/armc-013" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/../../../arm-none-eabi/include" />
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/include" />
+            <Add directory="/usr/lib/gcc/arm-none-eabi/4.8.2/include-fixed" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 armc-013/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/scripts/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/armc-013-cstartup.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/armc-013-cstubs.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/armc-013.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-armtimer.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-gpio.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-interrupts.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-systimer.c">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/armc-013-start.S">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-armtimer.h">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-base.h">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-gpio.h">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-interrupts.h">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/rpi-systimer.h">
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial4/toolchain-arm-none-eabi.cmake">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

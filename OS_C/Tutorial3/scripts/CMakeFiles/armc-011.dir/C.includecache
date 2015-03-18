@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/armc-011.c
+string.h
+-
+stdlib.h
+-
+rpi-gpio.h
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-gpio.h
+rpi-systimer.h
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-systimer.h
+
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-base.h
+stdint.h
+-
+
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-gpio.h
+
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-systimer.h
+stdint.h
+-
+rpi-base.h
+/home/tyler/RPi1/DCS-RPi/OS_C/Tutorial3/rpi-base.h
+

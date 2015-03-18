@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-armtimer.h
+stdint.h
+-
+rpi-base.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-base.h
+
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-base.h
+stdint.h
+-
+
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-gpio.h
+rpi-base.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-base.h
+
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-interrupts.c
+stdint.h
+-
+stdbool.h
+-
+rpi-armtimer.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-armtimer.h
+rpi-base.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-base.h
+rpi-gpio.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-gpio.h
+rpi-interrupts.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-interrupts.h
+
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-interrupts.h
+stdint.h
+-
+rpi-base.h
+/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/rpi-base.h
+

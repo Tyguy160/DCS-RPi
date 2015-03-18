@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo make clean all
+sudo ./report
+sudo ./capture
