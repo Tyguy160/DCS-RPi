@@ -1,1 +1,0 @@
-/home/tyler/RPi1/DCS-RPi/OS_C/C_Files/scripts/CMakeFiles/armc-013.dir
