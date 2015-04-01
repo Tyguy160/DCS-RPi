@@ -1,0 +1,68 @@
+
+gpio.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00008000 <main>:
+    8000:	e59f3034 	ldr	r3, [pc, #52]	; 803c <main+0x3c>
+    8004:	e5932000 	ldr	r2, [r3]
+    8008:	e5920000 	ldr	r0, [r2]
+    800c:	e3c00671 	bic	r0, r0, #118489088	; 0x7100000
+    8010:	e59f1028 	ldr	r1, [pc, #40]	; 8040 <main+0x40>
+    8014:	e3c00703 	bic	r0, r0, #786432	; 0xc0000
+    8018:	e3800741 	orr	r0, r0, #17039360	; 0x1040000
+    801c:	e5810000 	str	r0, [r1]
+    8020:	e5931004 	ldr	r1, [r3, #4]
+    8024:	e5820000 	str	r0, [r2]
+    8028:	e5932008 	ldr	r2, [r3, #8]
+    802c:	e3a03805 	mov	r3, #327680	; 0x50000
+    8030:	e5813000 	str	r3, [r1]
+    8034:	e5823000 	str	r3, [r2]
+    8038:	eafffffc 	b	8030 <main+0x30>
+    803c:	00010044 	andeq	r0, r1, r4, asr #32
+    8040:	00010050 	andeq	r0, r1, r0, asr r0
+
+Disassembly of section .data:
+
+00010044 <__data_start>:
+   10044:	20200004 	eorcs	r0, r0, r4
+
+00010048 <gpclr0>:
+   10048:	20200028 	eorcs	r0, r0, r8, lsr #32
+
+0001004c <gpset0>:
+   1004c:	2020001c 	eorcs	r0, r0, ip, lsl r0
+
+Disassembly of section .bss:
+
+00010050 <__bss_start>:
+   10050:	00000000 	andeq	r0, r0, r0
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347 	bcc	10d0d24 <_stack+0x1050d24>
+   4:	2e342820 	cdpcs	8, 3, cr2, cr4, cr0, {1}
+   8:	2d322e38 	ldccs	14, cr2, [r2, #-224]!	; 0xffffff20
+   c:	62753431 	rsbsvs	r3, r5, #822083584	; 0x31000000
+  10:	75746e75 	ldrbvc	r6, [r4, #-3701]!	; 0xe75
+  14:	29362b31 	ldmdbcs	r6!, {r0, r4, r5, r8, r9, fp, sp}
+  18:	382e3420 	stmdacc	lr!, {r5, sl, ip, sp}
+  1c:	Address 0x000000000000001c is out of bounds.
+
+
+Disassembly of section .ARM.attributes:
+
+00000000 <_stack-0x80000>:
+   0:	00002b41 	andeq	r2, r0, r1, asr #22
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000021 	andeq	r0, r0, r1, lsr #32
+  10:	4d524105 	ldfmie	f4, [r2, #-20]	; 0xffffffec
+  14:	4d445437 	cfstrdmi	mvd5, [r4, #-220]	; 0xffffff24
+  18:	02060049 	andeq	r0, r6, #73	; 0x49
+  1c:	01090108 	tsteq	r9, r8, lsl #2
+  20:	01170412 	tsteq	r7, r2, lsl r4
+  24:	01190118 	tsteq	r9, r8, lsl r1
+  28:	021e011a 	andseq	r0, lr, #-2147483642	; 0x80000006

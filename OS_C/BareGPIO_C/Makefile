@@ -6,7 +6,7 @@ ARMTOOLSROOT = /usr/bin/arm-none-eabi
 #
 #   C Compiler options.
 #
-OPTIONS = -nostdlib -ffreestanding -O1 
+OPTIONS = -nostdlib -ffreestanding -Ofast 
 
 #
 #   What do we need to make to build everything?
