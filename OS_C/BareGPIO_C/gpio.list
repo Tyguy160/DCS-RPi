@@ -5,39 +5,45 @@ gpio.elf:     file format elf32-littlearm
 Disassembly of section .text:
 
 00008000 <main>:
-    8000:	e59f3034 	ldr	r3, [pc, #52]	; 803c <main+0x3c>
+    8000:	e59f3040 	ldr	r3, [pc, #64]	; 8048 <main+0x48>
     8004:	e5932000 	ldr	r2, [r3]
     8008:	e5920000 	ldr	r0, [r2]
     800c:	e3c00671 	bic	r0, r0, #118489088	; 0x7100000
-    8010:	e59f1028 	ldr	r1, [pc, #40]	; 8040 <main+0x40>
+    8010:	e59f1034 	ldr	r1, [pc, #52]	; 804c <main+0x4c>
     8014:	e3c00703 	bic	r0, r0, #786432	; 0xc0000
     8018:	e3800741 	orr	r0, r0, #17039360	; 0x1040000
     801c:	e5810000 	str	r0, [r1]
-    8020:	e5931004 	ldr	r1, [r3, #4]
-    8024:	e5820000 	str	r0, [r2]
-    8028:	e5932008 	ldr	r2, [r3, #8]
-    802c:	e3a03805 	mov	r3, #327680	; 0x50000
-    8030:	e5813000 	str	r3, [r1]
-    8034:	e5823000 	str	r3, [r2]
-    8038:	eafffffc 	b	8030 <main+0x30>
-    803c:	00010044 	andeq	r0, r1, r4, asr #32
-    8040:	00010050 	andeq	r0, r1, r0, asr r0
+    8020:	e593c008 	ldr	ip, [r3, #8]
+    8024:	e5931004 	ldr	r1, [r3, #4]
+    8028:	e5820000 	str	r0, [r2]
+    802c:	e593000c 	ldr	r0, [r3, #12]
+    8030:	e3a02805 	mov	r2, #327680	; 0x50000
+    8034:	e5913000 	ldr	r3, [r1]
+    8038:	e3130802 	tst	r3, #131072	; 0x20000
+    803c:	158c2000 	strne	r2, [ip]
+    8040:	05802000 	streq	r2, [r0]
+    8044:	eafffffa 	b	8034 <main+0x34>
+    8048:	00010050 	andeq	r0, r1, r0, asr r0
+    804c:	00010060 	andeq	r0, r1, r0, rrx
 
 Disassembly of section .data:
 
-00010044 <__data_start>:
-   10044:	20200004 	eorcs	r0, r0, r4
+00010050 <__data_start>:
+   10050:	20200004 	eorcs	r0, r0, r4
 
-00010048 <gpclr0>:
-   10048:	20200028 	eorcs	r0, r0, r8, lsr #32
+00010054 <gplev0>:
+   10054:	20200034 	eorcs	r0, r0, r4, lsr r0
 
-0001004c <gpset0>:
-   1004c:	2020001c 	eorcs	r0, r0, ip, lsl r0
+00010058 <gpclr0>:
+   10058:	20200028 	eorcs	r0, r0, r8, lsr #32
+
+0001005c <gpset0>:
+   1005c:	2020001c 	eorcs	r0, r0, ip, lsl r0
 
 Disassembly of section .bss:
 
-00010050 <__bss_start>:
-   10050:	00000000 	andeq	r0, r0, r0
+00010060 <__bss_start>:
+   10060:	00000000 	andeq	r0, r0, r0
 
 Disassembly of section .comment:
 

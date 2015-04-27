@@ -5,19 +5,22 @@ gpio.o:     file format elf32-littlearm
 Disassembly of section .text.startup:
 
 00000000 <main>:
-   0:	e59f3034 	ldr	r3, [pc, #52]	; 3c <main+0x3c>
+   0:	e59f3040 	ldr	r3, [pc, #64]	; 48 <main+0x48>
    4:	e5932000 	ldr	r2, [r3]
    8:	e5920000 	ldr	r0, [r2]
    c:	e3c00671 	bic	r0, r0, #118489088	; 0x7100000
-  10:	e59f1028 	ldr	r1, [pc, #40]	; 40 <main+0x40>
+  10:	e59f1034 	ldr	r1, [pc, #52]	; 4c <main+0x4c>
   14:	e3c00703 	bic	r0, r0, #786432	; 0xc0000
   18:	e3800741 	orr	r0, r0, #17039360	; 0x1040000
   1c:	e5810000 	str	r0, [r1]
-  20:	e5931004 	ldr	r1, [r3, #4]
-  24:	e5820000 	str	r0, [r2]
-  28:	e5932008 	ldr	r2, [r3, #8]
-  2c:	e3a03805 	mov	r3, #327680	; 0x50000
-  30:	e5813000 	str	r3, [r1]
-  34:	e5823000 	str	r3, [r2]
-  38:	eafffffc 	b	30 <main+0x30>
+  20:	e593c008 	ldr	ip, [r3, #8]
+  24:	e5931004 	ldr	r1, [r3, #4]
+  28:	e5820000 	str	r0, [r2]
+  2c:	e593000c 	ldr	r0, [r3, #12]
+  30:	e3a02805 	mov	r2, #327680	; 0x50000
+  34:	e5913000 	ldr	r3, [r1]
+  38:	e3530000 	cmp	r3, #0
+  3c:	158c2000 	strne	r2, [ip]
+  40:	05802000 	streq	r2, [r0]
+  44:	eafffffa 	b	34 <main+0x34>
 	...
