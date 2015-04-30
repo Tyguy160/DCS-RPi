@@ -24,13 +24,13 @@
 	.globl	_start
 _start:
 	cps	#0x12				/* set irq mode */
-	mov	sp, #MEM_IRQ_STACK
+	ldr	sp, =MEM_IRQ_STACK
 	cps	#0x17				/* set abort mode */
-	mov	sp, #MEM_ABORT_STACK
+	ldr	sp, =MEM_ABORT_STACK
 	cps	#0x1B				/* set "undefined" mode */
-	mov	sp, #MEM_ABORT_STACK
+	ldr	sp, =MEM_ABORT_STACK
 	cps	#0x1F				/* set system mode */
-	mov	sp, #MEM_KERNEL_STACK
+	ldr	sp, =MEM_KERNEL_STACK
 	b	sysinit
 
 #if RASPPI != 1

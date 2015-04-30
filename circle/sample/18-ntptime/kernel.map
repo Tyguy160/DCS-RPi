@@ -1,0 +1,1832 @@
+Archive member included because of file (symbol)
+
+../../lib/usb/libusb.a(dwhcidevice.o)
+                              kernel.o (CDWHCIDevice::~CDWHCIDevice())
+../../lib/usb/libusb.a(dwhciregister.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (CDWHCIRegister::CDWHCIRegister(unsigned int))
+../../lib/usb/libusb.a(dwhcixferstagedata.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (CDWHCITransferStageData::~CDWHCITransferStageData())
+../../lib/usb/libusb.a(usbdevice.o)
+                              ../../lib/usb/libusb.a(dwhcixferstagedata.o) (CUSBDevice::GetAddress() const)
+../../lib/usb/libusb.a(usbendpoint.o)
+                              ../../lib/usb/libusb.a(usbdevice.o) (CUSBEndpoint::CUSBEndpoint(CUSBDevice*))
+../../lib/usb/libusb.a(usbhostcontroller.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (CUSBHostController::~CUSBHostController())
+../../lib/usb/libusb.a(usbrequest.o)
+                              ../../lib/usb/libusb.a(usbhostcontroller.o) (CUSBRequest::CUSBRequest(CUSBEndpoint*, void*, unsigned int, TSetupData*))
+../../lib/usb/libusb.a(usbdevicefactory.o)
+                              ../../lib/usb/libusb.a(usbdevice.o) (CUSBDeviceFactory::GetDevice(CUSBFunction*, CString*))
+../../lib/usb/libusb.a(usbstandardhub.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CUSBStandardHub::CUSBStandardHub(CUSBFunction*))
+../../lib/usb/libusb.a(usbmassdevice.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CUSBBulkOnlyMassStorageDevice::CUSBBulkOnlyMassStorageDevice(CUSBFunction*))
+../../lib/usb/libusb.a(dwhciframeschednper.o)
+                              ../../lib/usb/libusb.a(dwhcixferstagedata.o) (CDWHCIFrameSchedulerNonPeriodic::CDWHCIFrameSchedulerNonPeriodic())
+../../lib/usb/libusb.a(dwhciframeschedper.o)
+                              ../../lib/usb/libusb.a(dwhcixferstagedata.o) (CDWHCIFrameSchedulerPeriodic::CDWHCIFrameSchedulerPeriodic())
+../../lib/usb/libusb.a(usbkeyboard.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CUSBKeyboardDevice::CUSBKeyboardDevice(CUSBFunction*))
+../../lib/usb/libusb.a(dwhcirootport.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (CDWHCIRootPort::CDWHCIRootPort(CDWHCIDevice*))
+../../lib/usb/libusb.a(usbhiddevice.o)
+                              ../../lib/usb/libusb.a(usbkeyboard.o) (CUSBHIDDevice::~CUSBHIDDevice())
+../../lib/usb/libusb.a(usbmouse.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CUSBMouseDevice::CUSBMouseDevice(CUSBFunction*))
+../../lib/usb/libusb.a(usbfunction.o)
+                              ../../lib/usb/libusb.a(usbstandardhub.o) (CUSBFunction::Initialize())
+../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+                              ../../lib/usb/libusb.a(dwhcixferstagedata.o) (CDWHCIFrameSchedulerNoSplit::CDWHCIFrameSchedulerNoSplit(int))
+../../lib/usb/libusb.a(usbprinter.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CUSBPrinterDevice::CUSBPrinterDevice(CUSBFunction*))
+../../lib/usb/libusb.a(usbconfigparser.o)
+                              ../../lib/usb/libusb.a(usbdevice.o) (CUSBConfigurationParser::CUSBConfigurationParser(void const*, unsigned int))
+../../lib/usb/libusb.a(smsc951x.o)
+                              ../../lib/usb/libusb.a(usbdevicefactory.o) (CSMSC951xDevice::CSMSC951xDevice(CUSBFunction*))
+../../lib/usb/libusb.a(macaddress.o)
+                              ../../lib/usb/libusb.a(smsc951x.o) (CMACAddress::CMACAddress())
+../../lib/usb/libusb.a(netdevice.o)
+                              ../../lib/usb/libusb.a(smsc951x.o) (CNetDevice::~CNetDevice())
+../../lib/input/libinput.a(keyboardbehaviour.o)
+                              ../../lib/usb/libusb.a(usbkeyboard.o) (CKeyboardBehaviour::CKeyboardBehaviour())
+../../lib/input/libinput.a(keymap.o)
+                              ../../lib/input/libinput.a(keyboardbehaviour.o) (CKeyMap::CKeyMap())
+../../lib/fs/libfs.a(partitionmanager.o)
+                              ../../lib/usb/libusb.a(usbmassdevice.o) (CPartitionManager::CPartitionManager(CDevice*, char const*))
+../../lib/fs/libfs.a(partition.o)
+                              ../../lib/fs/libfs.a(partitionmanager.o) (CPartition::CPartition(CDevice*, unsigned int, unsigned int))
+../../lib/net/libnet.a(netsubsystem.o)
+                              kernel.o (CNetSubSystem::CNetSubSystem(unsigned char const*, unsigned char const*, unsigned char const*, unsigned char const*))
+../../lib/net/libnet.a(transportlayer.o)
+                              ../../lib/net/libnet.a(netsubsystem.o) (CTransportLayer::CTransportLayer(CNetConfig*, CNetworkLayer*))
+../../lib/net/libnet.a(networklayer.o)
+                              ../../lib/net/libnet.a(netsubsystem.o) (CNetworkLayer::CNetworkLayer(CNetConfig*, CLinkLayer*))
+../../lib/net/libnet.a(linklayer.o)
+                              ../../lib/net/libnet.a(netsubsystem.o) (CLinkLayer::CLinkLayer(CNetConfig*, CNetDeviceLayer*))
+../../lib/net/libnet.a(netdevlayer.o)
+                              ../../lib/net/libnet.a(netsubsystem.o) (CNetDeviceLayer::CNetDeviceLayer(CNetConfig*))
+../../lib/net/libnet.a(arphandler.o)
+                              ../../lib/net/libnet.a(linklayer.o) (CARPHandler::CARPHandler(CNetConfig*, CNetDeviceLayer*, CNetQueue*))
+../../lib/net/libnet.a(icmphandler.o)
+                              ../../lib/net/libnet.a(networklayer.o) (CICMPHandler::CICMPHandler(CNetConfig*, CNetworkLayer*, CNetQueue*))
+../../lib/net/libnet.a(netconnection.o)
+                              ../../lib/net/libnet.a(transportlayer.o) (CNetConnection::GetOwnPort() const)
+../../lib/net/libnet.a(udpconnection.o)
+                              ../../lib/net/libnet.a(transportlayer.o) (CUDPConnection::CUDPConnection(CNetConfig*, CNetworkLayer*, CIPAddress&, unsigned short, unsigned short))
+../../lib/net/libnet.a(netconfig.o)
+                              ../../lib/net/libnet.a(netsubsystem.o) (CNetConfig::CNetConfig())
+../../lib/net/libnet.a(ipaddress.o)
+                              kernel.o (CIPAddress::CIPAddress())
+../../lib/net/libnet.a(netqueue.o)
+                              ../../lib/net/libnet.a(networklayer.o) (CNetQueue::CNetQueue())
+../../lib/net/libnet.a(checksumcalculator.o)
+                              ../../lib/net/libnet.a(netconnection.o) (CChecksumCalculator::CChecksumCalculator(CIPAddress const&, int))
+../../lib/net/libnet.a(dnsclient.o)
+                              kernel.o (CDNSClient::CDNSClient(CNetSubSystem*))
+../../lib/net/libnet.a(ntpclient.o)
+                              kernel.o (CNTPClient::CNTPClient(CNetSubSystem*))
+../../lib/net/libnet.a(socket.o)
+                              ../../lib/net/libnet.a(dnsclient.o) (CSocket::CSocket(CNetSubSystem*, int))
+../../lib/libcircle.a(actled.o)
+                              kernel.o (CActLED::~CActLED())
+../../lib/libcircle.a(bcmpropertytags.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (CBcmPropertyTags::CBcmPropertyTags())
+../../lib/libcircle.a(gpiopin.o)
+                              ../../lib/libcircle.a(actled.o) (CGPIOPin::Write(unsigned int))
+../../lib/libcircle.a(libstub.o)
+                              ../../lib/usb/libusb.a(dwhcixferstagedata.o) (__aeabi_uidiv)
+../../lib/libcircle.a(memio.o)
+                              ../../lib/usb/libusb.a(dwhciregister.o) (read32)
+../../lib/libcircle.a(memory.o)
+                              kernel.o (CMemorySystem::~CMemorySystem())
+../../lib/libcircle.a(new.o)  ../../lib/usb/libusb.a(dwhcidevice.o) (operator new(unsigned int))
+../../lib/libcircle.a(purecall.o)
+                              ../../lib/usb/libusb.a(usbhostcontroller.o) (__cxa_pure_virtual)
+../../lib/libcircle.a(synchronize.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (EnterCritical)
+../../lib/libcircle.a(sysinit.o)
+                              main.o (halt)
+../../lib/libcircle.a(timer.o)
+                              kernel.o (CTimer::CTimer(CInterruptSystem*))
+../../lib/libcircle.a(util.o)
+                              ../../lib/usb/libusb.a(usbmassdevice.o) (memset)
+../../lib/libcircle.a(device.o)
+                              ../../lib/usb/libusb.a(usbfunction.o) (CDevice::~CDevice())
+../../lib/libcircle.a(koptions.o)
+                              kernel.o (CKernelOptions::~CKernelOptions())
+../../lib/libcircle.a(pagetable.o)
+                              ../../lib/libcircle.a(memory.o) (CPageTable::CPageTable())
+../../lib/libcircle.a(screen.o)
+                              kernel.o (CScreenDevice::~CScreenDevice())
+../../lib/libcircle.a(assert.o)
+                              ../../lib/usb/libusb.a(dwhcidevice.o) (assertion_failed)
+../../lib/libcircle.a(chargenerator.o)
+                              ../../lib/libcircle.a(screen.o) (CCharGenerator::CCharGenerator())
+../../lib/libcircle.a(debug.o)
+                              ../../lib/usb/libusb.a(usbconfigparser.o) (debug_hexdump(void const*, unsigned int, char const*))
+../../lib/libcircle.a(devicenameservice.o)
+                              kernel.o (CDeviceNameService::CDeviceNameService())
+../../lib/libcircle.a(logger.o)
+                              kernel.o (CLogger::CLogger(unsigned int, CTimer*))
+../../lib/libcircle.a(serial.o)
+                              kernel.o (CSerialDevice::CSerialDevice())
+../../lib/libcircle.a(string.o)
+                              ../../lib/usb/libusb.a(usbdevice.o) (CString::~CString())
+../../lib/libcircle.a(delayloop.o)
+                              ../../lib/libcircle.a(timer.o) (DelayLoop)
+../../lib/libcircle.a(exceptionhandler.o)
+                              kernel.o (CExceptionHandler::CExceptionHandler())
+../../lib/libcircle.a(exceptionstub.o)
+                              ../../lib/libcircle.a(exceptionhandler.o) (UndefinedInstructionStub)
+../../lib/libcircle.a(interrupt.o)
+                              kernel.o (CInterruptSystem::CInterruptSystem())
+../../lib/libcircle.a(gpiomanager.o)
+                              ../../lib/libcircle.a(gpiopin.o) (CGPIOManager::ConnectInterrupt(CGPIOPin*))
+../../lib/libcircle.a(alloc.o)
+                              ../../lib/libcircle.a(memory.o) (mem_init)
+../../lib/libcircle.a(bcmmailbox.o)
+                              ../../lib/libcircle.a(bcmpropertytags.o) (CBcmMailBox::CBcmMailBox(unsigned int))
+../../lib/libcircle.a(libhelper.o)
+                              ../../lib/libcircle.a(libstub.o) (Divide)
+../../lib/libcircle.a(util_fast.o)
+                              ../../lib/libcircle.a(screen.o) (memcpyblk)
+../../lib/libcircle.a(bcmframebuffer.o)
+                              ../../lib/libcircle.a(screen.o) (CBcmFrameBuffer::CBcmFrameBuffer(unsigned int, unsigned int, unsigned int))
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .text._ZN20CDWHCIFrameSchedulerD2Ev
+                0x0000000000000000       0x10 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .text._ZN20CDWHCIFrameSchedulerD0Ev
+                0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .rodata._ZTV20CDWHCIFrameScheduler
+                0x0000000000000000       0x28 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .group         0x0000000000000000        0x8 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .text._ZN20CDWHCIFrameSchedulerD2Ev
+                0x0000000000000000       0x10 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .text._ZN20CDWHCIFrameSchedulerD0Ev
+                0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .rodata._ZTV20CDWHCIFrameScheduler
+                0x0000000000000000       0x28 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000008000                . = 0x8000
+
+.text           0x0000000000008000    0x13e2c
+ *(.text*)
+ .text          0x0000000000008000       0x24 ../../lib/startup.o
+                0x0000000000008000                _start
+ .text          0x0000000000008024       0x60 main.o
+                0x0000000000008024                main
+ .text          0x0000000000008084      0x4a4 kernel.o
+                0x0000000000008084                CKernel::CKernel()
+                0x0000000000008084                CKernel::CKernel()
+                0x000000000000819c                CKernel::Initialize()
+                0x000000000000825c                CKernel::UpdateTime()
+                0x00000000000083cc                CKernel::Run()
+                0x000000000000849c                CKernel::~CKernel()
+                0x000000000000849c                CKernel::~CKernel()
+ .text          0x0000000000008528     0x2688 ../../lib/usb/libusb.a(dwhcidevice.o)
+                0x0000000000008528                CDWHCIDevice::CompletionRoutine(CUSBRequest*, void*, void*)
+                0x0000000000008584                CDWHCIDevice::~CDWHCIDevice()
+                0x0000000000008584                CDWHCIDevice::~CDWHCIDevice()
+                0x00000000000085bc                CDWHCIDevice::~CDWHCIDevice()
+                0x00000000000085d8                CDWHCIDevice::CDWHCIDevice(CInterruptSystem*, CTimer*)
+                0x00000000000085d8                CDWHCIDevice::CDWHCIDevice(CInterruptSystem*, CTimer*)
+                0x00000000000086c0                CDWHCIDevice::GetPortSpeed()
+                0x0000000000008720                CDWHCIDevice::OvercurrentDetected()
+                0x000000000000875c                CDWHCIDevice::DisableRootPort()
+                0x00000000000087a0                CDWHCIDevice::PowerOn()
+                0x0000000000008810                CDWHCIDevice::EnableGlobalInterrupts()
+                0x0000000000008854                CDWHCIDevice::EnableCommonInterrupts()
+                0x000000000000888c                CDWHCIDevice::EnableHostInterrupts()
+                0x00000000000088e8                CDWHCIDevice::EnableChannelInterrupt(unsigned int)
+                0x0000000000008958                CDWHCIDevice::DisableChannelInterrupt(unsigned int)
+                0x00000000000089c8                CDWHCIDevice::StartChannel(CDWHCITransferStageData*)
+                0x0000000000008d7c                CDWHCIDevice::StartTransaction(CDWHCITransferStageData*)
+                0x0000000000008e88                CDWHCIDevice::TimerHandler(CDWHCITransferStageData*)
+                0x0000000000008f4c                CDWHCIDevice::TimerStub(unsigned int, void*, void*)
+                0x0000000000008fa8                CDWHCIDevice::AllocateChannel()
+                0x0000000000009058                CDWHCIDevice::FreeChannel(unsigned int)
+                0x00000000000090e8                CDWHCIDevice::TransferStageAsync(CUSBRequest*, int, int)
+                0x0000000000009268                CDWHCIDevice::SubmitAsyncRequest(CUSBRequest*)
+                0x0000000000009334                CDWHCIDevice::ChannelInterruptHandler(unsigned int)
+                0x0000000000009968                CDWHCIDevice::InterruptHandler()
+                0x0000000000009a60                CDWHCIDevice::InterruptStub(void*)
+                0x0000000000009a94                CDWHCIDevice::AllocateWaitBlock()
+                0x0000000000009b34                CDWHCIDevice::FreeWaitBlock(unsigned int)
+                0x0000000000009bbc                CDWHCIDevice::TransferStage(CUSBRequest*, int, int)
+                0x0000000000009cac                CDWHCIDevice::SubmitBlockingRequest(CUSBRequest*)
+                0x0000000000009f1c                CDWHCIDevice::WaitForBit(CDWHCIRegister*, unsigned int, int, unsigned int)
+                0x000000000000a01c                CDWHCIDevice::EnableRootPort()
+                0x000000000000a0f0                CDWHCIDevice::Reset()
+                0x000000000000a19c                CDWHCIDevice::InitCore()
+                0x000000000000a3f8                CDWHCIDevice::FlushTxFIFO(unsigned int)
+                0x000000000000a494                CDWHCIDevice::FlushRxFIFO()
+                0x000000000000a514                CDWHCIDevice::InitHost()
+                0x000000000000a718                CDWHCIDevice::Initialize()
+                0x000000000000a950                CDWHCIDevice::DumpRegister(char const*, unsigned int)
+                0x000000000000a9b4                CDWHCIDevice::DumpStatus(unsigned int)
+ .text          0x000000000000abb0      0x2fc ../../lib/usb/libusb.a(dwhciregister.o)
+                0x000000000000abb0                CDWHCIRegister::CDWHCIRegister(unsigned int)
+                0x000000000000abb0                CDWHCIRegister::CDWHCIRegister(unsigned int)
+                0x000000000000abc0                CDWHCIRegister::CDWHCIRegister(unsigned int, unsigned int)
+                0x000000000000abc0                CDWHCIRegister::CDWHCIRegister(unsigned int, unsigned int)
+                0x000000000000abd4                CDWHCIRegister::~CDWHCIRegister()
+                0x000000000000abd4                CDWHCIRegister::~CDWHCIRegister()
+                0x000000000000abe0                CDWHCIRegister::Read()
+                0x000000000000ac00                CDWHCIRegister::Write()
+                0x000000000000ac3c                CDWHCIRegister::Get() const
+                0x000000000000ac70                CDWHCIRegister::Set(unsigned int)
+                0x000000000000ac80                CDWHCIRegister::IsSet(unsigned int) const
+                0x000000000000acc4                CDWHCIRegister::And(unsigned int)
+                0x000000000000ad04                CDWHCIRegister::Or(unsigned int)
+                0x000000000000ad44                CDWHCIRegister::ClearBit(unsigned int)
+                0x000000000000ada4                CDWHCIRegister::SetBit(unsigned int)
+                0x000000000000ae04                CDWHCIRegister::ClearAll()
+                0x000000000000ae18                CDWHCIRegister::SetAll()
+                0x000000000000ae2c                CDWHCIRegister::Dump() const
+ .text          0x000000000000aeac      0x91c ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+                0x000000000000aeac                CDWHCITransferStageData::~CDWHCITransferStageData()
+                0x000000000000aeac                CDWHCITransferStageData::~CDWHCITransferStageData()
+                0x000000000000af04                CDWHCITransferStageData::TransactionComplete(unsigned int, unsigned int, unsigned int)
+                0x000000000000b030                CDWHCITransferStageData::SetSplitComplete(int)
+                0x000000000000b068                CDWHCITransferStageData::SetState(unsigned int)
+                0x000000000000b070                CDWHCITransferStageData::GetState() const
+                0x000000000000b078                CDWHCITransferStageData::SetSubState(unsigned int)
+                0x000000000000b080                CDWHCITransferStageData::GetSubState() const
+                0x000000000000b088                CDWHCITransferStageData::BeginSplitCycle()
+                0x000000000000b090                CDWHCITransferStageData::GetChannelNumber() const
+                0x000000000000b098                CDWHCITransferStageData::IsPeriodic() const
+                0x000000000000b0e4                CDWHCITransferStageData::CDWHCITransferStageData(unsigned int, CUSBRequest*, int, int)
+                0x000000000000b0e4                CDWHCITransferStageData::CDWHCITransferStageData(unsigned int, CUSBRequest*, int, int)
+                0x000000000000b3e4                CDWHCITransferStageData::GetDeviceAddress() const
+                0x000000000000b41c                CDWHCITransferStageData::GetEndpointType() const
+                0x000000000000b4a0                CDWHCITransferStageData::GetEndpointNumber() const
+                0x000000000000b4d8                CDWHCITransferStageData::GetMaxPacketSize() const
+                0x000000000000b4e0                CDWHCITransferStageData::GetSpeed() const
+                0x000000000000b4e8                CDWHCITransferStageData::GetPID() const
+                0x000000000000b570                CDWHCITransferStageData::IsDirectionIn() const
+                0x000000000000b578                CDWHCITransferStageData::IsStatusStage() const
+                0x000000000000b580                CDWHCITransferStageData::GetDMAAddress() const
+                0x000000000000b5b8                CDWHCITransferStageData::GetBytesToTransfer() const
+                0x000000000000b5c0                CDWHCITransferStageData::GetPacketsToTransfer() const
+                0x000000000000b5c8                CDWHCITransferStageData::IsSplit() const
+                0x000000000000b5d0                CDWHCITransferStageData::IsSplitComplete() const
+                0x000000000000b604                CDWHCITransferStageData::GetHubAddress() const
+                0x000000000000b664                CDWHCITransferStageData::GetHubPortAddress() const
+                0x000000000000b6c4                CDWHCITransferStageData::GetSplitPosition() const
+                0x000000000000b6f8                CDWHCITransferStageData::GetStatusMask() const
+                0x000000000000b72c                CDWHCITransferStageData::GetTransactionStatus() const
+                0x000000000000b764                CDWHCITransferStageData::IsStageComplete() const
+                0x000000000000b774                CDWHCITransferStageData::GetResultLen() const
+                0x000000000000b788                CDWHCITransferStageData::GetURB() const
+                0x000000000000b7c0                CDWHCITransferStageData::GetFrameScheduler() const
+ .text          0x000000000000b7c8      0xf30 ../../lib/usb/libusb.a(usbdevice.o)
+                0x000000000000b7c8                CUSBDevice::~CUSBDevice()
+                0x000000000000b7c8                CUSBDevice::~CUSBDevice()
+                0x000000000000b884                CUSBDevice::~CUSBDevice()
+                0x000000000000b8a0                CUSBDevice::CUSBDevice(CUSBHostController*, TUSBSpeed, unsigned char, unsigned char)
+                0x000000000000b8a0                CUSBDevice::CUSBDevice(CUSBHostController*, TUSBSpeed, unsigned char, unsigned char)
+                0x000000000000b9a4                CUSBDevice::GetName(TDeviceNameSelector) const
+                0x000000000000badc                CUSBDevice::GetNames() const
+                0x000000000000bbf4                CUSBDevice::SetAddress(unsigned char)
+                0x000000000000bc2c                CUSBDevice::GetAddress() const
+                0x000000000000bc34                CUSBDevice::GetSpeed() const
+                0x000000000000bc3c                CUSBDevice::GetHubAddress() const
+                0x000000000000bc44                CUSBDevice::GetHubPortNumber() const
+                0x000000000000bc4c                CUSBDevice::GetEndpoint0() const
+                0x000000000000bc84                CUSBDevice::GetHost() const
+                0x000000000000bcbc                CUSBDevice::GetDeviceDescriptor() const
+                0x000000000000bcf4                CUSBDevice::GetConfigurationDescriptor() const
+                0x000000000000bd2c                CUSBDevice::GetDescriptor(unsigned char)
+                0x000000000000bd70                CUSBDevice::ConfigurationError(char const*) const
+                0x000000000000bdb4                CUSBDevice::LogWrite(TLogSeverity, char const*, ...)
+                0x000000000000be68                CUSBDevice::Initialize()
+                0x000000000000c5c8                CUSBDevice::Configure()
+ .text          0x000000000000c6f8      0x430 ../../lib/usb/libusb.a(usbendpoint.o)
+                0x000000000000c6f8                CUSBEndpoint::CUSBEndpoint(CUSBDevice*)
+                0x000000000000c6f8                CUSBEndpoint::CUSBEndpoint(CUSBDevice*)
+                0x000000000000c750                CUSBEndpoint::CUSBEndpoint(CUSBDevice*, TUSBEndpointDescriptor const*)
+                0x000000000000c750                CUSBEndpoint::CUSBEndpoint(CUSBDevice*, TUSBEndpointDescriptor const*)
+                0x000000000000c8c0                CUSBEndpoint::CUSBEndpoint(CUSBEndpoint*, CUSBDevice*)
+                0x000000000000c8c0                CUSBEndpoint::CUSBEndpoint(CUSBEndpoint*, CUSBDevice*)
+                0x000000000000c944                CUSBEndpoint::~CUSBEndpoint()
+                0x000000000000c944                CUSBEndpoint::~CUSBEndpoint()
+                0x000000000000c950                CUSBEndpoint::GetDevice() const
+                0x000000000000c984                CUSBEndpoint::GetNumber() const
+                0x000000000000c98c                CUSBEndpoint::GetType() const
+                0x000000000000c994                CUSBEndpoint::IsDirectionIn() const
+                0x000000000000c99c                CUSBEndpoint::SetMaxPacketSize(unsigned int)
+                0x000000000000c9a4                CUSBEndpoint::GetMaxPacketSize() const
+                0x000000000000c9ac                CUSBEndpoint::GetInterval() const
+                0x000000000000c9e0                CUSBEndpoint::GetNextPID(int)
+                0x000000000000ca28                CUSBEndpoint::SkipPID(unsigned int, int)
+                0x000000000000caf0                CUSBEndpoint::ResetPID()
+ .text          0x000000000000cb28      0x24c ../../lib/usb/libusb.a(usbhostcontroller.o)
+                0x000000000000cb28                CUSBHostController::~CUSBHostController()
+                0x000000000000cb28                CUSBHostController::~CUSBHostController()
+                0x000000000000cb38                CUSBHostController::~CUSBHostController()
+                0x000000000000cb54                CUSBHostController::CUSBHostController()
+                0x000000000000cb54                CUSBHostController::CUSBHostController()
+                0x000000000000cb64                CUSBHostController::ControlMessage(CUSBEndpoint*, unsigned char, unsigned char, unsigned short, unsigned short, void*, unsigned short)
+                0x000000000000cc40                CUSBHostController::GetDescriptor(CUSBEndpoint*, unsigned char, unsigned char, void*, unsigned int, unsigned char)
+                0x000000000000cc7c                CUSBHostController::SetAddress(CUSBEndpoint*, unsigned char)
+                0x000000000000ccc8                CUSBHostController::SetConfiguration(CUSBEndpoint*, unsigned char)
+                0x000000000000cd14                CUSBHostController::Transfer(CUSBEndpoint*, void*, unsigned int)
+ .text          0x000000000000cd74      0x238 ../../lib/usb/libusb.a(usbrequest.o)
+                0x000000000000cd74                CUSBRequest::CUSBRequest(CUSBEndpoint*, void*, unsigned int, TSetupData*)
+                0x000000000000cd74                CUSBRequest::CUSBRequest(CUSBEndpoint*, void*, unsigned int, TSetupData*)
+                0x000000000000cdfc                CUSBRequest::~CUSBRequest()
+                0x000000000000cdfc                CUSBRequest::~CUSBRequest()
+                0x000000000000ce14                CUSBRequest::GetEndpoint() const
+                0x000000000000ce48                CUSBRequest::SetStatus(int)
+                0x000000000000ce50                CUSBRequest::SetResultLen(unsigned int)
+                0x000000000000ce58                CUSBRequest::GetStatus() const
+                0x000000000000ce60                CUSBRequest::GetResultLength() const
+                0x000000000000ce94                CUSBRequest::GetSetupData()
+                0x000000000000ceec                CUSBRequest::GetBuffer()
+                0x000000000000cf2c                CUSBRequest::GetBufLen() const
+                0x000000000000cf34                CUSBRequest::SetCompletionRoutine(void (*)(CUSBRequest*, void*, void*), void*, void*)
+                0x000000000000cf68                CUSBRequest::CallCompletionRoutine()
+ .text          0x000000000000cfac      0x1d4 ../../lib/usb/libusb.a(usbdevicefactory.o)
+                0x000000000000cfac                CUSBDeviceFactory::GetDevice(CUSBFunction*, CString*)
+ .text          0x000000000000d180      0xa7c ../../lib/usb/libusb.a(usbstandardhub.o)
+                0x000000000000d180                CUSBStandardHub::~CUSBStandardHub()
+                0x000000000000d180                CUSBStandardHub::~CUSBStandardHub()
+                0x000000000000d210                CUSBStandardHub::~CUSBStandardHub()
+                0x000000000000d22c                CUSBStandardHub::CUSBStandardHub(CUSBFunction*)
+                0x000000000000d22c                CUSBStandardHub::CUSBStandardHub(CUSBFunction*)
+                0x000000000000d278                CUSBStandardHub::EnumeratePorts()
+                0x000000000000d9b0                CUSBStandardHub::Configure()
+ .text          0x000000000000dbfc      0xce8 ../../lib/usb/libusb.a(usbmassdevice.o)
+                0x000000000000dbfc                CUSBBulkOnlyMassStorageDevice::Seek(unsigned long long)
+                0x000000000000dc0c                CUSBBulkOnlyMassStorageDevice::~CUSBBulkOnlyMassStorageDevice()
+                0x000000000000dc0c                CUSBBulkOnlyMassStorageDevice::~CUSBBulkOnlyMassStorageDevice()
+                0x000000000000dc9c                CUSBBulkOnlyMassStorageDevice::~CUSBBulkOnlyMassStorageDevice()
+                0x000000000000dcb8                CUSBBulkOnlyMassStorageDevice::CUSBBulkOnlyMassStorageDevice(CUSBFunction*)
+                0x000000000000dcb8                CUSBBulkOnlyMassStorageDevice::CUSBBulkOnlyMassStorageDevice(CUSBFunction*)
+                0x000000000000dcfc                CUSBBulkOnlyMassStorageDevice::GetCapacity() const
+                0x000000000000dd04                CUSBBulkOnlyMassStorageDevice::Command(void*, unsigned int, void*, unsigned int, int)
+                0x000000000000dfb0                CUSBBulkOnlyMassStorageDevice::TryRead(void*, unsigned int)
+                0x000000000000e0d0                CUSBBulkOnlyMassStorageDevice::TryWrite(void const*, unsigned int)
+                0x000000000000e1f4                CUSBBulkOnlyMassStorageDevice::Reset()
+                0x000000000000e350                CUSBBulkOnlyMassStorageDevice::Read(void*, unsigned int)
+                0x000000000000e3ac                CUSBBulkOnlyMassStorageDevice::Write(void const*, unsigned int)
+                0x000000000000e408                CUSBBulkOnlyMassStorageDevice::Configure()
+ .text          0x000000000000e8e4      0x23c ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                0x000000000000e8e4                CDWHCIFrameSchedulerNonPeriodic::~CDWHCIFrameSchedulerNonPeriodic()
+                0x000000000000e8e4                CDWHCIFrameSchedulerNonPeriodic::~CDWHCIFrameSchedulerNonPeriodic()
+                0x000000000000e8fc                CDWHCIFrameSchedulerNonPeriodic::StartSplit()
+                0x000000000000e908                CDWHCIFrameSchedulerNonPeriodic::WaitForFrame()
+                0x000000000000e90c                CDWHCIFrameSchedulerNonPeriodic::IsOddFrame() const
+                0x000000000000e914                CDWHCIFrameSchedulerNonPeriodic::~CDWHCIFrameSchedulerNonPeriodic()
+                0x000000000000e930                CDWHCIFrameSchedulerNonPeriodic::CompleteSplit()
+                0x000000000000e9b4                CDWHCIFrameSchedulerNonPeriodic::TransactionComplete(unsigned int)
+                0x000000000000ead4                CDWHCIFrameSchedulerNonPeriodic::CDWHCIFrameSchedulerNonPeriodic()
+                0x000000000000ead4                CDWHCIFrameSchedulerNonPeriodic::CDWHCIFrameSchedulerNonPeriodic()
+ .text._ZN20CDWHCIFrameSchedulerD2Ev
+                0x000000000000eb20       0x10 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                0x000000000000eb20                CDWHCIFrameScheduler::~CDWHCIFrameScheduler()
+                0x000000000000eb20                CDWHCIFrameScheduler::~CDWHCIFrameScheduler()
+ .text._ZN20CDWHCIFrameSchedulerD0Ev
+                0x000000000000eb30       0x20 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                0x000000000000eb30                CDWHCIFrameScheduler::~CDWHCIFrameScheduler()
+ .text          0x000000000000eb50      0x2d0 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+                0x000000000000eb50                CDWHCIFrameSchedulerPeriodic::~CDWHCIFrameSchedulerPeriodic()
+                0x000000000000eb50                CDWHCIFrameSchedulerPeriodic::~CDWHCIFrameSchedulerPeriodic()
+                0x000000000000eb70                CDWHCIFrameSchedulerPeriodic::StartSplit()
+                0x000000000000eb84                CDWHCIFrameSchedulerPeriodic::IsOddFrame() const
+                0x000000000000eb90                CDWHCIFrameSchedulerPeriodic::~CDWHCIFrameSchedulerPeriodic()
+                0x000000000000ebac                CDWHCIFrameSchedulerPeriodic::CompleteSplit()
+                0x000000000000ec48                CDWHCIFrameSchedulerPeriodic::TransactionComplete(unsigned int)
+                0x000000000000ed60                CDWHCIFrameSchedulerPeriodic::WaitForFrame()
+                0x000000000000edcc                CDWHCIFrameSchedulerPeriodic::CDWHCIFrameSchedulerPeriodic()
+                0x000000000000edcc                CDWHCIFrameSchedulerPeriodic::CDWHCIFrameSchedulerPeriodic()
+ .text          0x000000000000ee20      0x310 ../../lib/usb/libusb.a(usbkeyboard.o)
+                0x000000000000ee20                CUSBKeyboardDevice::~CUSBKeyboardDevice()
+                0x000000000000ee20                CUSBKeyboardDevice::~CUSBKeyboardDevice()
+                0x000000000000ee54                CUSBKeyboardDevice::~CUSBKeyboardDevice()
+                0x000000000000ee70                CUSBKeyboardDevice::CUSBKeyboardDevice(CUSBFunction*)
+                0x000000000000ee70                CUSBKeyboardDevice::CUSBKeyboardDevice(CUSBFunction*)
+                0x000000000000eeb0                CUSBKeyboardDevice::RegisterKeyPressedHandler(void (*)(char const*))
+                0x000000000000eec0                CUSBKeyboardDevice::RegisterSelectConsoleHandler(void (*)(unsigned int))
+                0x000000000000eed0                CUSBKeyboardDevice::RegisterShutdownHandler(void (*)())
+                0x000000000000eee0                CUSBKeyboardDevice::RegisterKeyStatusHandlerRaw(void (*)(unsigned char, unsigned char const*))
+                0x000000000000ef10                CUSBKeyboardDevice::FindByte(unsigned char const*, unsigned char, unsigned int)
+                0x000000000000ef3c                CUSBKeyboardDevice::ReportHandler(unsigned char const*)
+                0x000000000000f08c                CUSBKeyboardDevice::Configure()
+ .text          0x000000000000f130      0x244 ../../lib/usb/libusb.a(dwhcirootport.o)
+                0x000000000000f130                CDWHCIRootPort::CDWHCIRootPort(CDWHCIDevice*)
+                0x000000000000f130                CDWHCIRootPort::CDWHCIRootPort(CDWHCIDevice*)
+                0x000000000000f16c                CDWHCIRootPort::~CDWHCIRootPort()
+                0x000000000000f16c                CDWHCIRootPort::~CDWHCIRootPort()
+                0x000000000000f1a0                CDWHCIRootPort::Initialize()
+ .text          0x000000000000f374      0x4b8 ../../lib/usb/libusb.a(usbhiddevice.o)
+                0x000000000000f374                CUSBHIDDevice::~CUSBHIDDevice()
+                0x000000000000f374                CUSBHIDDevice::~CUSBHIDDevice()
+                0x000000000000f3d4                CUSBHIDDevice::~CUSBHIDDevice()
+                0x000000000000f3f0                CUSBHIDDevice::CUSBHIDDevice(CUSBFunction*, unsigned int)
+                0x000000000000f3f0                CUSBHIDDevice::CUSBHIDDevice(CUSBFunction*, unsigned int)
+                0x000000000000f470                CUSBHIDDevice::StartRequest()
+                0x000000000000f57c                CUSBHIDDevice::CompletionRoutine(CUSBRequest*)
+                0x000000000000f668                CUSBHIDDevice::CompletionStub(CUSBRequest*, void*, void*)
+                0x000000000000f6a0                CUSBHIDDevice::Configure()
+ .text          0x000000000000f82c      0x1c0 ../../lib/usb/libusb.a(usbmouse.o)
+                0x000000000000f82c                CUSBMouseDevice::~CUSBMouseDevice()
+                0x000000000000f82c                CUSBMouseDevice::~CUSBMouseDevice()
+                0x000000000000f854                CUSBMouseDevice::~CUSBMouseDevice()
+                0x000000000000f870                CUSBMouseDevice::ReportHandler(unsigned char const*)
+                0x000000000000f8c8                CUSBMouseDevice::CUSBMouseDevice(CUSBFunction*)
+                0x000000000000f8c8                CUSBMouseDevice::CUSBMouseDevice(CUSBFunction*)
+                0x000000000000f8f4                CUSBMouseDevice::RegisterStatusHandler(void (*)(unsigned int, int, int))
+                0x000000000000f948                CUSBMouseDevice::Configure()
+ .text          0x000000000000f9ec      0x574 ../../lib/usb/libusb.a(usbfunction.o)
+                0x000000000000f9ec                CUSBFunction::Initialize()
+                0x000000000000f9f4                CUSBFunction::~CUSBFunction()
+                0x000000000000f9f4                CUSBFunction::~CUSBFunction()
+                0x000000000000fa48                CUSBFunction::~CUSBFunction()
+                0x000000000000fa64                CUSBFunction::CUSBFunction(CUSBDevice*, CUSBConfigurationParser*)
+                0x000000000000fa64                CUSBFunction::CUSBFunction(CUSBDevice*, CUSBConfigurationParser*)
+                0x000000000000fb34                CUSBFunction::CUSBFunction(CUSBFunction*)
+                0x000000000000fb34                CUSBFunction::CUSBFunction(CUSBFunction*)
+                0x000000000000fc28                CUSBFunction::GetInterfaceName() const
+                0x000000000000fcb4                CUSBFunction::GetNumEndpoints() const
+                0x000000000000fcec                CUSBFunction::GetDevice() const
+                0x000000000000fd20                CUSBFunction::GetEndpoint0() const
+                0x000000000000fd58                CUSBFunction::GetHost() const
+                0x000000000000fd90                CUSBFunction::Configure()
+                0x000000000000fe54                CUSBFunction::GetDescriptor(unsigned char)
+                0x000000000000fe94                CUSBFunction::ConfigurationError(char const*) const
+                0x000000000000fef0                CUSBFunction::GetInterfaceNumber() const
+                0x000000000000ff28                CUSBFunction::GetInterfaceProtocol() const
+ .text          0x000000000000ff60      0x120 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+                0x000000000000ff60                CDWHCIFrameSchedulerNoSplit::~CDWHCIFrameSchedulerNoSplit()
+                0x000000000000ff60                CDWHCIFrameSchedulerNoSplit::~CDWHCIFrameSchedulerNoSplit()
+                0x000000000000ff70                CDWHCIFrameSchedulerNoSplit::IsOddFrame() const
+                0x000000000000ff7c                CDWHCIFrameSchedulerNoSplit::~CDWHCIFrameSchedulerNoSplit()
+                0x000000000000ff98                CDWHCIFrameSchedulerNoSplit::StartSplit()
+                0x000000000000ffb8                CDWHCIFrameSchedulerNoSplit::CompleteSplit()
+                0x000000000000ffdc                CDWHCIFrameSchedulerNoSplit::TransactionComplete(unsigned int)
+                0x000000000000fffc                CDWHCIFrameSchedulerNoSplit::WaitForFrame()
+                0x0000000000010064                CDWHCIFrameSchedulerNoSplit::CDWHCIFrameSchedulerNoSplit(int)
+                0x0000000000010064                CDWHCIFrameSchedulerNoSplit::CDWHCIFrameSchedulerNoSplit(int)
+ .text          0x0000000000010080      0x37c ../../lib/usb/libusb.a(usbprinter.o)
+                0x0000000000010080                CUSBPrinterDevice::~CUSBPrinterDevice()
+                0x0000000000010080                CUSBPrinterDevice::~CUSBPrinterDevice()
+                0x00000000000100ec                CUSBPrinterDevice::~CUSBPrinterDevice()
+                0x0000000000010108                CUSBPrinterDevice::Write(void const*, unsigned int)
+                0x0000000000010198                CUSBPrinterDevice::CUSBPrinterDevice(CUSBFunction*)
+                0x0000000000010198                CUSBPrinterDevice::CUSBPrinterDevice(CUSBFunction*)
+                0x00000000000101c8                CUSBPrinterDevice::Configure()
+ .text          0x00000000000103fc      0x378 ../../lib/usb/libusb.a(usbconfigparser.o)
+                0x00000000000103fc                CUSBConfigurationParser::CUSBConfigurationParser(void const*, unsigned int)
+                0x00000000000103fc                CUSBConfigurationParser::CUSBConfigurationParser(void const*, unsigned int)
+                0x0000000000010560                CUSBConfigurationParser::CUSBConfigurationParser(CUSBConfigurationParser*)
+                0x0000000000010560                CUSBConfigurationParser::CUSBConfigurationParser(CUSBConfigurationParser*)
+                0x00000000000105c8                CUSBConfigurationParser::~CUSBConfigurationParser()
+                0x00000000000105c8                CUSBConfigurationParser::~CUSBConfigurationParser()
+                0x00000000000105ec                CUSBConfigurationParser::IsValid() const
+                0x00000000000105f4                CUSBConfigurationParser::GetDescriptor(unsigned char)
+                0x00000000000106b4                CUSBConfigurationParser::GetCurrentDescriptor()
+                0x0000000000010708                CUSBConfigurationParser::Error(char const*) const
+ .text          0x0000000000010774      0x9b4 ../../lib/usb/libusb.a(smsc951x.o)
+                0x0000000000010774                CSMSC951xDevice::GetMACAddress() const
+                0x000000000001077c                CSMSC951xDevice::~CSMSC951xDevice()
+                0x000000000001077c                CSMSC951xDevice::~CSMSC951xDevice()
+                0x0000000000010800                CSMSC951xDevice::~CSMSC951xDevice()
+                0x000000000001081c                CSMSC951xDevice::SendFrame(void const*, unsigned int)
+                0x00000000000108f8                CSMSC951xDevice::ReceiveFrame(void*, unsigned int*)
+                0x0000000000010a9c                CSMSC951xDevice::CSMSC951xDevice(CUSBFunction*)
+                0x0000000000010a9c                CSMSC951xDevice::CSMSC951xDevice(CUSBFunction*)
+                0x0000000000010b00                CSMSC951xDevice::WriteReg(unsigned int, unsigned int)
+                0x0000000000010b68                CSMSC951xDevice::ReadReg(unsigned int, unsigned int*)
+                0x0000000000010bd0                CSMSC951xDevice::DumpReg(char const*, unsigned int)
+                0x0000000000010c44                CSMSC951xDevice::DumpRegs()
+                0x0000000000010ddc                CSMSC951xDevice::Configure()
+ .text          0x0000000000011128      0x2a0 ../../lib/usb/libusb.a(macaddress.o)
+                0x0000000000011128                CMACAddress::CMACAddress()
+                0x0000000000011128                CMACAddress::CMACAddress()
+                0x0000000000011134                CMACAddress::~CMACAddress()
+                0x0000000000011134                CMACAddress::~CMACAddress()
+                0x0000000000011140                CMACAddress::Set(unsigned char const*)
+                0x0000000000011184                CMACAddress::CMACAddress(unsigned char const*)
+                0x0000000000011184                CMACAddress::CMACAddress(unsigned char const*)
+                0x0000000000011198                CMACAddress::SetBroadcast()
+                0x00000000000111bc                CMACAddress::Get() const
+                0x00000000000111f0                CMACAddress::operator==(CMACAddress const&) const
+                0x0000000000011244                CMACAddress::operator!=(CMACAddress const&) const
+                0x0000000000011258                CMACAddress::CopyTo(unsigned char*) const
+                0x00000000000112b8                CMACAddress::IsBroadcast() const
+                0x0000000000011330                CMACAddress::GetSize() const
+                0x0000000000011338                CMACAddress::Format(CString*) const
+ .text          0x00000000000113c8       0x5c ../../lib/usb/libusb.a(netdevice.o)
+                0x00000000000113c8                CNetDevice::~CNetDevice()
+                0x00000000000113c8                CNetDevice::~CNetDevice()
+                0x00000000000113e8                CNetDevice::~CNetDevice()
+                0x0000000000011404                CNetDevice::CNetDevice(CUSBFunction*)
+                0x0000000000011404                CNetDevice::CNetDevice(CUSBFunction*)
+ .text          0x0000000000011424      0x3b4 ../../lib/input/libinput.a(keyboardbehaviour.o)
+                0x0000000000011424                CKeyboardBehaviour::CKeyboardBehaviour()
+                0x0000000000011424                CKeyboardBehaviour::CKeyboardBehaviour()
+                0x0000000000011458                CKeyboardBehaviour::~CKeyboardBehaviour()
+                0x0000000000011458                CKeyboardBehaviour::~CKeyboardBehaviour()
+                0x0000000000011480                CKeyboardBehaviour::RegisterKeyPressedHandler(void (*)(char const*))
+                0x00000000000114b0                CKeyboardBehaviour::RegisterSelectConsoleHandler(void (*)(unsigned int))
+                0x00000000000114e0                CKeyboardBehaviour::RegisterShutdownHandler(void (*)())
+                0x0000000000011510                CKeyboardBehaviour::GetLEDStatus() const
+                0x0000000000011520                CKeyboardBehaviour::GenerateKeyEvent(unsigned char)
+                0x0000000000011620                CKeyboardBehaviour::KeyPressed(unsigned char)
+                0x000000000001168c                CKeyboardBehaviour::KeyReleased(unsigned char)
+                0x0000000000011718                CKeyboardBehaviour::TimerHandler(unsigned int)
+                0x00000000000117a0                CKeyboardBehaviour::TimerStub(unsigned int, void*, void*)
+ .text          0x00000000000117d8      0x314 ../../lib/input/libinput.a(keymap.o)
+                0x00000000000117d8                CKeyMap::CKeyMap()
+                0x00000000000117d8                CKeyMap::CKeyMap()
+                0x000000000001180c                CKeyMap::~CKeyMap()
+                0x000000000001180c                CKeyMap::~CKeyMap()
+                0x0000000000011810                CKeyMap::ClearTable(unsigned char)
+                0x0000000000011848                CKeyMap::SetEntry(unsigned char, unsigned char, unsigned short)
+                0x00000000000118a0                CKeyMap::Translate(unsigned char, unsigned char)
+                0x00000000000119e4                CKeyMap::GetString(unsigned short, unsigned char, char*) const
+                0x0000000000011ab8                CKeyMap::GetLEDStatus() const
+ .text          0x0000000000011aec      0x2bc ../../lib/fs/libfs.a(partitionmanager.o)
+                0x0000000000011aec                CPartitionManager::CPartitionManager(CDevice*, char const*)
+                0x0000000000011aec                CPartitionManager::CPartitionManager(CDevice*, char const*)
+                0x0000000000011b1c                CPartitionManager::~CPartitionManager()
+                0x0000000000011b1c                CPartitionManager::~CPartitionManager()
+                0x0000000000011b78                CPartitionManager::Initialize()
+ .text          0x0000000000011da8      0x2f4 ../../lib/fs/libfs.a(partition.o)
+                0x0000000000011da8                CPartition::Read(void*, unsigned int)
+                0x0000000000011e54                CPartition::Write(void const*, unsigned int)
+                0x0000000000011f00                CPartition::Seek(unsigned long long)
+                0x0000000000011fec                CPartition::~CPartition()
+                0x0000000000011fec                CPartition::~CPartition()
+                0x0000000000012014                CPartition::~CPartition()
+                0x0000000000012030                CPartition::CPartition(CDevice*, unsigned int, unsigned int)
+                0x0000000000012030                CPartition::CPartition(CDevice*, unsigned int, unsigned int)
+ .text          0x000000000001209c      0x1d8 ../../lib/net/libnet.a(netsubsystem.o)
+                0x000000000001209c                CNetSubSystem::CNetSubSystem(unsigned char const*, unsigned char const*, unsigned char const*, unsigned char const*)
+                0x000000000001209c                CNetSubSystem::CNetSubSystem(unsigned char const*, unsigned char const*, unsigned char const*, unsigned char const*)
+                0x0000000000012134                CNetSubSystem::~CNetSubSystem()
+                0x0000000000012134                CNetSubSystem::~CNetSubSystem()
+                0x000000000001216c                CNetSubSystem::Initialize()
+                0x00000000000121d0                CNetSubSystem::Process()
+                0x00000000000121fc                CNetSubSystem::ProcessAndDelay(unsigned int)
+                0x0000000000012268                CNetSubSystem::GetConfig()
+                0x000000000001226c                CNetSubSystem::GetTransportLayer()
+ .text          0x0000000000012274      0x774 ../../lib/net/libnet.a(transportlayer.o)
+                0x0000000000012274                CTransportLayer::CTransportLayer(CNetConfig*, CNetworkLayer*)
+                0x0000000000012274                CTransportLayer::CTransportLayer(CNetConfig*, CNetworkLayer*)
+                0x0000000000012310                CTransportLayer::~CTransportLayer()
+                0x0000000000012310                CTransportLayer::~CTransportLayer()
+                0x0000000000012388                CTransportLayer::Initialize()
+                0x00000000000123e4                CTransportLayer::Process()
+                0x000000000001252c                CTransportLayer::Connect(CIPAddress&, unsigned short, unsigned short, int)
+                0x000000000001274c                CTransportLayer::Listen(unsigned short, int)
+                0x0000000000012754                CTransportLayer::Accept(CIPAddress*, unsigned short*, int)
+                0x000000000001280c                CTransportLayer::Disconnect(int)
+                0x0000000000012878                CTransportLayer::Send(void const*, unsigned int, int, int)
+                0x0000000000012944                CTransportLayer::Receive(void*, int, int)
+ .text          0x00000000000129e8      0x6a8 ../../lib/net/libnet.a(networklayer.o)
+                0x00000000000129e8                CNetworkLayer::CNetworkLayer(CNetConfig*, CLinkLayer*)
+                0x00000000000129e8                CNetworkLayer::CNetworkLayer(CNetConfig*, CLinkLayer*)
+                0x0000000000012a60                CNetworkLayer::~CNetworkLayer()
+                0x0000000000012a60                CNetworkLayer::~CNetworkLayer()
+                0x0000000000012abc                CNetworkLayer::Initialize()
+                0x0000000000012b74                CNetworkLayer::Process()
+                0x0000000000012da0                CNetworkLayer::Send(CIPAddress const&, void const*, unsigned int, int)
+                0x0000000000012f98                CNetworkLayer::Receive(void*, unsigned int*, CIPAddress*, int*)
+ .text          0x0000000000013090      0x55c ../../lib/net/libnet.a(linklayer.o)
+                0x0000000000013090                CLinkLayer::CLinkLayer(CNetConfig*, CNetDeviceLayer*)
+                0x0000000000013090                CLinkLayer::CLinkLayer(CNetConfig*, CNetDeviceLayer*)
+                0x0000000000013108                CLinkLayer::~CLinkLayer()
+                0x0000000000013108                CLinkLayer::~CLinkLayer()
+                0x0000000000013160                CLinkLayer::Initialize()
+                0x0000000000013218                CLinkLayer::Process()
+                0x00000000000133fc                CLinkLayer::Send(CIPAddress const&, void const*, unsigned int)
+                0x0000000000013584                CLinkLayer::Receive(void*, unsigned int*)
+ .text          0x00000000000135ec      0x308 ../../lib/net/libnet.a(netdevlayer.o)
+                0x00000000000135ec                CNetDeviceLayer::CNetDeviceLayer(CNetConfig*)
+                0x00000000000135ec                CNetDeviceLayer::CNetDeviceLayer(CNetConfig*)
+                0x000000000001361c                CNetDeviceLayer::~CNetDeviceLayer()
+                0x000000000001361c                CNetDeviceLayer::~CNetDeviceLayer()
+                0x000000000001365c                CNetDeviceLayer::Initialize()
+                0x0000000000013724                CNetDeviceLayer::Process()
+                0x0000000000013850                CNetDeviceLayer::GetMACAddress() const
+                0x0000000000013890                CNetDeviceLayer::Send(void const*, unsigned int)
+                0x00000000000138a4                CNetDeviceLayer::Receive(void*, unsigned int*)
+ .text          0x00000000000138f4      0x990 ../../lib/net/libnet.a(arphandler.o)
+                0x00000000000138f4                CARPHandler::TimerHandler(unsigned int, void*, void*)
+                0x000000000001398c                CARPHandler::CARPHandler(CNetConfig*, CNetDeviceLayer*, CNetQueue*)
+                0x000000000001398c                CARPHandler::CARPHandler(CNetConfig*, CNetDeviceLayer*, CNetQueue*)
+                0x0000000000013a6c                CARPHandler::~CARPHandler()
+                0x0000000000013a6c                CARPHandler::~CARPHandler()
+                0x0000000000013aa0                CARPHandler::ReplyReceived(CIPAddress const&, CMACAddress const&)
+                0x0000000000013b64                CARPHandler::RequestReceived(CIPAddress const&, CMACAddress const&)
+                0x0000000000013c54                CARPHandler::SendPacket(int, CIPAddress const&, CMACAddress const&)
+                0x0000000000013da4                CARPHandler::Process()
+                0x000000000001401c                CARPHandler::Resolve(CIPAddress const&, CMACAddress*)
+ .text          0x0000000000014284      0x270 ../../lib/net/libnet.a(icmphandler.o)
+                0x0000000000014284                CICMPHandler::CICMPHandler(CNetConfig*, CNetworkLayer*, CNetQueue*)
+                0x0000000000014284                CICMPHandler::CICMPHandler(CNetConfig*, CNetworkLayer*, CNetQueue*)
+                0x0000000000014330                CICMPHandler::~CICMPHandler()
+                0x0000000000014330                CICMPHandler::~CICMPHandler()
+                0x0000000000014364                CICMPHandler::Process()
+ .text          0x00000000000144f4      0x1dc ../../lib/net/libnet.a(netconnection.o)
+                0x00000000000144f4                CNetConnection::~CNetConnection()
+                0x00000000000144f4                CNetConnection::~CNetConnection()
+                0x000000000001452c                CNetConnection::~CNetConnection()
+                0x0000000000014548                CNetConnection::CNetConnection(CNetConfig*, CNetworkLayer*, CIPAddress&, unsigned short, unsigned short, int)
+                0x0000000000014548                CNetConnection::CNetConnection(CNetConfig*, CNetworkLayer*, CIPAddress&, unsigned short, unsigned short, int)
+                0x00000000000145f8                CNetConnection::CNetConnection(CNetConfig*, CNetworkLayer*, unsigned short, int)
+                0x00000000000145f8                CNetConnection::CNetConnection(CNetConfig*, CNetworkLayer*, unsigned short, int)
+                0x0000000000014694                CNetConnection::GetOwnPort() const
+                0x00000000000146c8                CNetConnection::GetProtocol() const
+ .text          0x00000000000146d0      0x3f0 ../../lib/net/libnet.a(udpconnection.o)
+                0x00000000000146d0                CUDPConnection::Accept(CIPAddress*, unsigned short*)
+                0x00000000000146d8                CUDPConnection::Close()
+                0x00000000000146f4                CUDPConnection::IsTerminated() const
+                0x0000000000014704                CUDPConnection::Process()
+                0x0000000000014708                CUDPConnection::Connect()
+                0x0000000000014738                CUDPConnection::~CUDPConnection()
+                0x0000000000014738                CUDPConnection::~CUDPConnection()
+                0x0000000000014788                CUDPConnection::~CUDPConnection()
+                0x00000000000147a4                CUDPConnection::Send(void const*, unsigned int, int)
+                0x0000000000014918                CUDPConnection::Receive(void*, int)
+                0x0000000000014968                CUDPConnection::PacketReceived(void const*, unsigned int, CIPAddress&, int)
+                0x0000000000014a70                CUDPConnection::CUDPConnection(CNetConfig*, CNetworkLayer*, CIPAddress&, unsigned short, unsigned short)
+                0x0000000000014a70                CUDPConnection::CUDPConnection(CNetConfig*, CNetworkLayer*, CIPAddress&, unsigned short, unsigned short)
+ .text          0x0000000000014ac0      0x110 ../../lib/net/libnet.a(netconfig.o)
+                0x0000000000014ac0                CNetConfig::CNetConfig()
+                0x0000000000014ac0                CNetConfig::CNetConfig()
+                0x0000000000014b04                CNetConfig::~CNetConfig()
+                0x0000000000014b04                CNetConfig::~CNetConfig()
+                0x0000000000014b34                CNetConfig::SetIPAddress(unsigned int)
+                0x0000000000014b40                CNetConfig::SetNetMask(unsigned int)
+                0x0000000000014b50                CNetConfig::SetDefaultGateway(unsigned int)
+                0x0000000000014b60                CNetConfig::SetDNSServer(unsigned int)
+                0x0000000000014b70                CNetConfig::SetIPAddress(unsigned char const*)
+                0x0000000000014b7c                CNetConfig::SetNetMask(unsigned char const*)
+                0x0000000000014b8c                CNetConfig::SetDefaultGateway(unsigned char const*)
+                0x0000000000014b9c                CNetConfig::SetDNSServer(unsigned char const*)
+                0x0000000000014bac                CNetConfig::GetIPAddress() const
+                0x0000000000014bb0                CNetConfig::GetNetMask() const
+                0x0000000000014bc0                CNetConfig::GetDefaultGateway() const
+                0x0000000000014bc8                CNetConfig::GetDNSServer() const
+ .text          0x0000000000014bd0      0x374 ../../lib/net/libnet.a(ipaddress.o)
+                0x0000000000014bd0                CIPAddress::CIPAddress()
+                0x0000000000014bd0                CIPAddress::CIPAddress()
+                0x0000000000014bdc                CIPAddress::~CIPAddress()
+                0x0000000000014bdc                CIPAddress::~CIPAddress()
+                0x0000000000014be8                CIPAddress::operator==(unsigned char const*) const
+                0x0000000000014c50                CIPAddress::operator!=(unsigned char const*) const
+                0x0000000000014c64                CIPAddress::Set(unsigned int)
+                0x0000000000014c98                CIPAddress::CIPAddress(unsigned int)
+                0x0000000000014c98                CIPAddress::CIPAddress(unsigned int)
+                0x0000000000014cac                CIPAddress::Set(unsigned char const*)
+                0x0000000000014cf0                CIPAddress::CIPAddress(unsigned char const*)
+                0x0000000000014cf0                CIPAddress::CIPAddress(unsigned char const*)
+                0x0000000000014d04                CIPAddress::Get() const
+                0x0000000000014d38                CIPAddress::CIPAddress(CIPAddress const&)
+                0x0000000000014d38                CIPAddress::CIPAddress(CIPAddress const&)
+                0x0000000000014d5c                CIPAddress::operator==(CIPAddress const&) const
+                0x0000000000014db0                CIPAddress::operator!=(CIPAddress const&) const
+                0x0000000000014dc4                CIPAddress::CopyTo(unsigned char*) const
+                0x0000000000014e24                CIPAddress::Set(CIPAddress const&)
+                0x0000000000014e44                CIPAddress::GetSize() const
+                0x0000000000014e4c                CIPAddress::Format(CString*) const
+                0x0000000000014ecc                CIPAddress::OnSameNetwork(CIPAddress const&, unsigned char const*) const
+ .text          0x0000000000014f44      0x34c ../../lib/net/libnet.a(netqueue.o)
+                0x0000000000014f44                CNetQueue::CNetQueue()
+                0x0000000000014f44                CNetQueue::CNetQueue()
+                0x0000000000014f58                CNetQueue::IsEmpty() const
+                0x0000000000014f68                CNetQueue::Flush()
+                0x0000000000015028                CNetQueue::~CNetQueue()
+                0x0000000000015028                CNetQueue::~CNetQueue()
+                0x000000000001503c                CNetQueue::Enqueue(void const*, unsigned int, void*)
+                0x000000000001517c                CNetQueue::Dequeue(void*, void**)
+ .text          0x0000000000015290      0x25c ../../lib/net/libnet.a(checksumcalculator.o)
+                0x0000000000015290                CChecksumCalculator::CChecksumCalculator(CIPAddress const&, int)
+                0x0000000000015290                CChecksumCalculator::CChecksumCalculator(CIPAddress const&, int)
+                0x00000000000152c0                CChecksumCalculator::CChecksumCalculator(CIPAddress const&, CIPAddress const&, int)
+                0x00000000000152c0                CChecksumCalculator::CChecksumCalculator(CIPAddress const&, CIPAddress const&, int)
+                0x0000000000015304                CChecksumCalculator::~CChecksumCalculator()
+                0x0000000000015304                CChecksumCalculator::~CChecksumCalculator()
+                0x0000000000015308                CChecksumCalculator::SetDestinationAddress(CIPAddress const&)
+                0x0000000000015328                CChecksumCalculator::CalculateChunk(void const*, unsigned int, unsigned int)
+                0x00000000000153c0                CChecksumCalculator::FoldResult(unsigned int)
+                0x00000000000153dc                CChecksumCalculator::Calculate(void const*, unsigned int)
+                0x0000000000015488                CChecksumCalculator::SimpleCalculate(void const*, unsigned int)
+ .text          0x00000000000154ec      0x4ec ../../lib/net/libnet.a(dnsclient.o)
+                0x00000000000154ec                CDNSClient::CDNSClient(CNetSubSystem*)
+                0x00000000000154ec                CDNSClient::CDNSClient(CNetSubSystem*)
+                0x0000000000015520                CDNSClient::~CDNSClient()
+                0x0000000000015520                CDNSClient::~CDNSClient()
+                0x000000000001552c                CDNSClient::Resolve(char const*, CIPAddress*)
+ .text          0x00000000000159d8      0x238 ../../lib/net/libnet.a(ntpclient.o)
+                0x00000000000159d8                CNTPClient::CNTPClient(CNetSubSystem*)
+                0x00000000000159d8                CNTPClient::CNTPClient(CNetSubSystem*)
+                0x0000000000015a14                CNTPClient::~CNTPClient()
+                0x0000000000015a14                CNTPClient::~CNTPClient()
+                0x0000000000015a20                CNTPClient::SetTimeZone(int)
+                0x0000000000015a64                CNTPClient::GetTime(CIPAddress&)
+ .text          0x0000000000015c10      0x338 ../../lib/net/libnet.a(socket.o)
+                0x0000000000015c10                CSocket::CSocket(CNetSubSystem*, int)
+                0x0000000000015c10                CSocket::CSocket(CNetSubSystem*, int)
+                0x0000000000015cc0                CSocket::~CSocket()
+                0x0000000000015cc0                CSocket::~CSocket()
+                0x0000000000015d2c                CSocket::Connect(CIPAddress&, unsigned short)
+                0x0000000000015dcc                CSocket::Send(void const*, unsigned int, int)
+                0x0000000000015e6c                CSocket::Receive(void*, unsigned int, int)
+ .text          0x0000000000015f48      0x1b8 ../../lib/libcircle.a(actled.o)
+                0x0000000000015f48                CActLED::~CActLED()
+                0x0000000000015f48                CActLED::~CActLED()
+                0x0000000000015f5c                CActLED::On()
+                0x0000000000015f84                CActLED::Off()
+                0x0000000000015fac                CActLED::CActLED()
+                0x0000000000015fac                CActLED::CActLED()
+                0x00000000000160a4                CActLED::Blink(unsigned int, unsigned int, unsigned int)
+                0x00000000000160f0                CActLED::Get()
+ .text          0x0000000000016100      0x178 ../../lib/libcircle.a(bcmpropertytags.o)
+                0x0000000000016100                CBcmPropertyTags::CBcmPropertyTags()
+                0x0000000000016100                CBcmPropertyTags::CBcmPropertyTags()
+                0x0000000000016118                CBcmPropertyTags::~CBcmPropertyTags()
+                0x0000000000016118                CBcmPropertyTags::~CBcmPropertyTags()
+                0x000000000001612c                CBcmPropertyTags::GetTag(unsigned int, void*, unsigned int, unsigned int)
+ .text          0x0000000000016278      0xac0 ../../lib/libcircle.a(gpiopin.o)
+                0x0000000000016278                CGPIOPin::~CGPIOPin()
+                0x0000000000016278                CGPIOPin::~CGPIOPin()
+                0x000000000001629c                CGPIOPin::~CGPIOPin()
+                0x00000000000162b8                CGPIOPin::Write(unsigned int)
+                0x0000000000016374                CGPIOPin::Read() const
+                0x000000000001640c                CGPIOPin::Invert()
+                0x000000000001644c                CGPIOPin::ConnectInterrupt(void (*)(void*), void*)
+                0x0000000000016520                CGPIOPin::DisconnectInterrupt()
+                0x00000000000165d0                CGPIOPin::EnableInterrupt(TGPIOInterrupt)
+                0x0000000000016718                CGPIOPin::DisableInterrupt()
+                0x0000000000016808                CGPIOPin::SetPullUpMode(unsigned int)
+                0x00000000000168e8                CGPIOPin::SetAlternateFunction(unsigned int)
+                0x00000000000169c4                CGPIOPin::SetMode(TGPIOMode, int)
+                0x0000000000016b74                CGPIOPin::CGPIOPin(unsigned int, TGPIOMode, CGPIOManager*)
+                0x0000000000016b74                CGPIOPin::CGPIOPin(unsigned int, TGPIOMode, CGPIOManager*)
+                0x0000000000016be4                CGPIOPin::InterruptHandler()
+                0x0000000000016c74                CGPIOPin::DisableAllInterrupts(unsigned int)
+ .text          0x0000000000016d38       0x2c ../../lib/libcircle.a(libstub.o)
+                0x0000000000016d38                __aeabi_uidiv
+                0x0000000000016d48                __aeabi_uidivmod
+ .text          0x0000000000016d64       0x10 ../../lib/libcircle.a(memio.o)
+                0x0000000000016d64                read32
+                0x0000000000016d6c                write32
+ .text          0x0000000000016d74      0x3a4 ../../lib/libcircle.a(memory.o)
+                0x0000000000016d74                CMemorySystem::~CMemorySystem()
+                0x0000000000016d74                CMemorySystem::~CMemorySystem()
+                0x0000000000016df4                CMemorySystem::GetMemSize() const
+                0x0000000000016dfc                CMemorySystem::SetPageTable0(CPageTable*, unsigned int)
+                0x0000000000016e64                CMemorySystem::SetPageTable0(unsigned int, unsigned int)
+                0x0000000000016eb8                CMemorySystem::GetTTBR0() const
+                0x0000000000016ee8                CMemorySystem::GetContextID() const
+                0x0000000000016f18                CMemorySystem::EnableMMU()
+                0x0000000000017000                CMemorySystem::CMemorySystem(int)
+                0x0000000000017000                CMemorySystem::CMemorySystem(int)
+ .text          0x0000000000017118       0x40 ../../lib/libcircle.a(new.o)
+                0x0000000000017118                operator new(unsigned int)
+                0x0000000000017124                operator new[](unsigned int)
+                0x0000000000017130                operator delete(void*)
+                0x0000000000017144                operator delete[](void*)
+ .text          0x0000000000017158       0x20 ../../lib/libcircle.a(purecall.o)
+                0x0000000000017158                __cxa_pure_virtual
+ .text          0x0000000000017178       0xa4 ../../lib/libcircle.a(synchronize.o)
+                0x0000000000017178                EnterCritical
+                0x00000000000171b8                LeaveCritical
+ .text          0x000000000001721c       0xfc ../../lib/libcircle.a(sysinit.o)
+                0x000000000001721c                __aeabi_atexit
+                0x0000000000017220                halt
+                0x0000000000017228                reboot
+                0x0000000000017260                sysinit
+ .text          0x0000000000017318      0x884 ../../lib/libcircle.a(timer.o)
+                0x0000000000017318                CTimer::CTimer(CInterruptSystem*)
+                0x0000000000017318                CTimer::CTimer(CInterruptSystem*)
+                0x00000000000173ac                CTimer::~CTimer()
+                0x00000000000173ac                CTimer::~CTimer()
+                0x00000000000173c0                CTimer::SetTime(unsigned int)
+                0x00000000000173f4                CTimer::GetClockTicks() const
+                0x0000000000017418                CTimer::GetTicks() const
+                0x0000000000017420                CTimer::GetTime() const
+                0x0000000000017428                CTimer::StartKernelTimer(unsigned int, void (*)(unsigned int, void*, void*), void*, void*)
+                0x00000000000174fc                CTimer::CancelKernelTimer(unsigned int)
+                0x0000000000017558                CTimer::PollKernelTimers()
+                0x0000000000017604                CTimer::InterruptHandler()
+                0x0000000000017704                CTimer::InterruptHandler(void*)
+                0x0000000000017734                CTimer::MsDelay(unsigned int)
+                0x0000000000017750                CTimer::usDelay(unsigned int)
+                0x000000000001776c                CTimer::TuneMsDelay()
+                0x0000000000017810                CTimer::Initialize()
+                0x00000000000178a8                CTimer::SimpleusDelay(unsigned int)
+                0x00000000000178f0                CTimer::SimpleMsDelay(unsigned int)
+                0x000000000001790c                CTimer::IsLeapYear(unsigned int)
+                0x0000000000017960                CTimer::GetDaysOfMonth(unsigned int, unsigned int)
+                0x0000000000017998                CTimer::GetTimeString()
+                0x0000000000017b5c                CTimer::Get()
+ .text          0x0000000000017b9c      0x3dc ../../lib/libcircle.a(util.o)
+                0x0000000000017b9c                memset
+                0x0000000000017bbc                memcpy
+                0x0000000000017be0                memcmp
+                0x0000000000017c60                strlen
+                0x0000000000017c90                strcmp
+                0x0000000000017d48                strcpy
+                0x0000000000017d7c                strncpy
+                0x0000000000017dd0                strcat
+                0x0000000000017e24                strchr
+                0x0000000000017e70                strtok_r
+                0x0000000000017f48                char2int
+                0x0000000000017f4c                le2be16
+                0x0000000000017f5c                le2be32
+ .text          0x0000000000017f78       0x58 ../../lib/libcircle.a(device.o)
+                0x0000000000017f78                CDevice::~CDevice()
+                0x0000000000017f78                CDevice::~CDevice()
+                0x0000000000017f88                CDevice::Read(void*, unsigned int)
+                0x0000000000017f90                CDevice::Write(void const*, unsigned int)
+                0x0000000000017f98                CDevice::Seek(unsigned long long)
+                0x0000000000017fa4                CDevice::~CDevice()
+                0x0000000000017fc0                CDevice::CDevice()
+                0x0000000000017fc0                CDevice::CDevice()
+ .text          0x0000000000017fd0      0x3c4 ../../lib/libcircle.a(koptions.o)
+                0x0000000000017fd0                CKernelOptions::~CKernelOptions()
+                0x0000000000017fd0                CKernelOptions::~CKernelOptions()
+                0x0000000000017fe4                CKernelOptions::GetWidth() const
+                0x0000000000017fec                CKernelOptions::GetHeight() const
+                0x0000000000017ff4                CKernelOptions::GetLogDevice() const
+                0x0000000000018000                CKernelOptions::GetLogLevel() const
+                0x0000000000018008                CKernelOptions::GetUSBPowerDelay() const
+                0x0000000000018010                CKernelOptions::Get()
+                0x0000000000018020                CKernelOptions::GetToken()
+                0x00000000000180c0                CKernelOptions::GetOptionValue(char*)
+                0x0000000000018118                CKernelOptions::GetDecimal(char*)
+                0x00000000000181b0                CKernelOptions::CKernelOptions()
+                0x00000000000181b0                CKernelOptions::CKernelOptions()
+ .text          0x0000000000018394      0x1b8 ../../lib/libcircle.a(pagetable.o)
+                0x0000000000018394                CPageTable::CPageTable()
+                0x0000000000018394                CPageTable::CPageTable()
+                0x0000000000018418                CPageTable::CPageTable(unsigned int)
+                0x0000000000018418                CPageTable::CPageTable(unsigned int)
+                0x0000000000018514                CPageTable::~CPageTable()
+                0x0000000000018514                CPageTable::~CPageTable()
+                0x0000000000018540                CPageTable::GetBaseAddress() const
+ .text          0x000000000001854c      0xfa8 ../../lib/libcircle.a(screen.o)
+                0x000000000001854c                CScreenDevice::~CScreenDevice()
+                0x000000000001854c                CScreenDevice::~CScreenDevice()
+                0x00000000000185c0                CScreenDevice::~CScreenDevice()
+                0x00000000000185dc                CScreenDevice::CScreenDevice(unsigned int, unsigned int, int)
+                0x00000000000185dc                CScreenDevice::CScreenDevice(unsigned int, unsigned int, int)
+                0x000000000001864c                CScreenDevice::GetWidth() const
+                0x0000000000018654                CScreenDevice::GetHeight() const
+                0x000000000001865c                CScreenDevice::GetStatus()
+                0x00000000000186b0                CScreenDevice::SetStatus(TScreenStatus)
+                0x0000000000018784                CScreenDevice::CarriageReturn()
+                0x0000000000018790                CScreenDevice::CursorHome()
+                0x00000000000187a0                CScreenDevice::CursorLeft()
+                0x0000000000018808                CScreenDevice::CursorMove(unsigned int, unsigned int)
+                0x000000000001885c                CScreenDevice::CursorUp()
+                0x0000000000018894                CScreenDevice::DeleteChars(unsigned int)
+                0x0000000000018898                CScreenDevice::DeleteLines(unsigned int)
+                0x000000000001889c                CScreenDevice::InsertLines(unsigned int)
+                0x00000000000188a0                CScreenDevice::InsertMode(int)
+                0x00000000000188a8                CScreenDevice::ReverseScroll()
+                0x00000000000188ac                CScreenDevice::SetCursorMode(int)
+                0x00000000000188b4                CScreenDevice::SetStandoutMode(unsigned int)
+                0x0000000000018954                CScreenDevice::Scroll()
+                0x00000000000189b4                CScreenDevice::CursorDown()
+                0x0000000000018a00                CScreenDevice::NewLine()
+                0x0000000000018a14                CScreenDevice::CursorRight()
+                0x0000000000018a48                CScreenDevice::Tabulator()
+                0x0000000000018a8c                CScreenDevice::SetPixel(unsigned int, unsigned int, unsigned char)
+                0x0000000000018ab8                CScreenDevice::DisplayChar(char, unsigned int, unsigned int, unsigned char)
+                0x0000000000018b5c                CScreenDevice::DisplayChar(char)
+                0x0000000000018b9c                CScreenDevice::EraseChar(unsigned int, unsigned int)
+                0x0000000000018c04                CScreenDevice::ClearLineEnd()
+                0x0000000000018c4c                CScreenDevice::ClearDisplayEnd()
+                0x0000000000018c90                CScreenDevice::EraseChars(unsigned int)
+                0x0000000000018cf8                CScreenDevice::Write(char)
+                0x00000000000191c8                CScreenDevice::GetPixel(unsigned int, unsigned int)
+                0x0000000000019200                CScreenDevice::InvertCursor()
+                0x0000000000019298                CScreenDevice::Initialize()
+                0x000000000001940c                CScreenDevice::Write(void const*, unsigned int)
+                0x0000000000019498                CScreenDevice::Rotor(unsigned int, unsigned int)
+ .text          0x00000000000194f4       0x88 ../../lib/libcircle.a(assert.o)
+                0x00000000000194f4                assertion_failed
+ .text          0x000000000001957c       0xa4 ../../lib/libcircle.a(chargenerator.o)
+                0x000000000001957c                CCharGenerator::CCharGenerator()
+                0x000000000001957c                CCharGenerator::CCharGenerator()
+                0x0000000000019588                CCharGenerator::~CCharGenerator()
+                0x0000000000019588                CCharGenerator::~CCharGenerator()
+                0x000000000001958c                CCharGenerator::GetCharWidth() const
+                0x0000000000019594                CCharGenerator::GetCharHeight() const
+                0x000000000001959c                CCharGenerator::GetUnderline() const
+                0x00000000000195a4                CCharGenerator::GetPixel(char, unsigned int, unsigned int) const
+ .text          0x0000000000019620      0x198 ../../lib/libcircle.a(debug.o)
+                0x0000000000019620                debug_hexdump(void const*, unsigned int, char const*)
+                0x0000000000019730                debug_stacktrace(unsigned int const*, char const*)
+ .text          0x00000000000197b8      0x2ec ../../lib/libcircle.a(devicenameservice.o)
+                0x00000000000197b8                CDeviceNameService::CDeviceNameService()
+                0x00000000000197b8                CDeviceNameService::CDeviceNameService()
+                0x0000000000019808                CDeviceNameService::~CDeviceNameService()
+                0x0000000000019808                CDeviceNameService::~CDeviceNameService()
+                0x0000000000019874                CDeviceNameService::AddDevice(char const*, CDevice*, int)
+                0x000000000001995c                CDeviceNameService::GetDevice(char const*, int)
+                0x0000000000019a68                CDeviceNameService::Get()
+ .text          0x0000000000019aa4      0x3a8 ../../lib/libcircle.a(logger.o)
+                0x0000000000019aa4                CLogger::CLogger(unsigned int, CTimer*)
+                0x0000000000019aa4                CLogger::CLogger(unsigned int, CTimer*)
+                0x0000000000019af0                CLogger::~CLogger()
+                0x0000000000019af0                CLogger::~CLogger()
+                0x0000000000019b24                CLogger::Get()
+                0x0000000000019b34                CLogger::Write(char const*)
+                0x0000000000019be8                CLogger::Read(void*, unsigned int)
+                0x0000000000019c9c                CLogger::WriteV(char const*, TLogSeverity, char const*, std::__va_list)
+                0x0000000000019df4                CLogger::Write(char const*, TLogSeverity, char const*, ...)
+                0x0000000000019e24                CLogger::Initialize(CDevice*)
+ .text          0x0000000000019e4c      0x350 ../../lib/libcircle.a(serial.o)
+                0x0000000000019e4c                CSerialDevice::CSerialDevice()
+                0x0000000000019e4c                CSerialDevice::CSerialDevice()
+                0x0000000000019e9c                CSerialDevice::Initialize(unsigned int)
+                0x000000000001a038                CSerialDevice::Write(unsigned char)
+                0x000000000001a06c                CSerialDevice::Write(void const*, unsigned int)
+                0x000000000001a118                CSerialDevice::~CSerialDevice()
+                0x000000000001a118                CSerialDevice::~CSerialDevice()
+                0x000000000001a180                CSerialDevice::~CSerialDevice()
+ .text          0x000000000001a19c      0x868 ../../lib/libcircle.a(string.o)
+                0x000000000001a19c                CString::~CString()
+                0x000000000001a19c                CString::~CString()
+                0x000000000001a1d0                CString::~CString()
+                0x000000000001a1ec                CString::CString()
+                0x000000000001a1ec                CString::CString()
+                0x000000000001a208                CString::CString(char const*)
+                0x000000000001a208                CString::CString(char const*)
+                0x000000000001a248                CString::operator char const*() const
+                0x000000000001a260                CString::operator=(char const*)
+                0x000000000001a2a4                CString::GetLength() const
+                0x000000000001a2c4                CString::Append(char const*)
+                0x000000000001a350                CString::Compare(char const*) const
+                0x000000000001a360                CString::Find(char) const
+                0x000000000001a3b8                CString::ReserveSpace(unsigned long)
+                0x000000000001a430                CString::PutChar(char, unsigned long)
+                0x000000000001a474                CString::PutString(char const*)
+                0x000000000001a4b4                CString::ntoa(char*, unsigned long, unsigned int, int)
+                0x000000000001a580                CString::FormatV(char const*, std::__va_list)
+                0x000000000001a9d8                CString::Format(char const*, ...)
+ *fill*         0x000000000001aa04        0x4 
+ .text          0x000000000001aa08       0x10 ../../lib/libcircle.a(delayloop.o)
+                0x000000000001aa08                DelayLoop
+ .text          0x000000000001aa18      0x244 ../../lib/libcircle.a(exceptionhandler.o)
+                0x000000000001aa18                CExceptionHandler::CExceptionHandler()
+                0x000000000001aa18                CExceptionHandler::CExceptionHandler()
+                0x000000000001aac0                CExceptionHandler::~CExceptionHandler()
+                0x000000000001aac0                CExceptionHandler::~CExceptionHandler()
+                0x000000000001aad4                CExceptionHandler::Throw(unsigned int)
+                0x000000000001ab14                CExceptionHandler::Throw(unsigned int, TAbortFrame*)
+                0x000000000001abf8                CExceptionHandler::Get()
+                0x000000000001ac34                ExceptionHandler
+ .text          0x000000000001ac5c       0xd0 ../../lib/libcircle.a(exceptionstub.o)
+                0x000000000001ac5c                UndefinedInstructionStub
+                0x000000000001ac9c                PrefetchAbortStub
+                0x000000000001acdc                DataAbortStub
+                0x000000000001ad1c                IRQStub
+ .text          0x000000000001ad2c      0x46c ../../lib/libcircle.a(interrupt.o)
+                0x000000000001ad2c                CInterruptSystem::CInterruptSystem()
+                0x000000000001ad2c                CInterruptSystem::CInterruptSystem()
+                0x000000000001ad5c                CInterruptSystem::~CInterruptSystem()
+                0x000000000001ad5c                CInterruptSystem::~CInterruptSystem()
+                0x000000000001ad70                CInterruptSystem::Initialize()
+                0x000000000001ae4c                CInterruptSystem::EnableIRQ(unsigned int)
+                0x000000000001aec4                CInterruptSystem::ConnectIRQ(unsigned int, void (*)(void*), void*)
+                0x000000000001af30                CInterruptSystem::DisableIRQ(unsigned int)
+                0x000000000001afa8                CInterruptSystem::DisconnectIRQ(unsigned int)
+                0x000000000001b010                CInterruptSystem::Get()
+                0x000000000001b04c                CInterruptSystem::CallIRQHandler(unsigned int)
+                0x000000000001b0a8                CInterruptSystem::InterruptHandler()
+                0x000000000001b17c                InterruptHandler
+ .text          0x000000000001b198      0x374 ../../lib/libcircle.a(gpiomanager.o)
+                0x000000000001b198                CGPIOManager::CGPIOManager(CInterruptSystem*)
+                0x000000000001b198                CGPIOManager::CGPIOManager(CInterruptSystem*)
+                0x000000000001b1c0                CGPIOManager::~CGPIOManager()
+                0x000000000001b1c0                CGPIOManager::~CGPIOManager()
+                0x000000000001b254                CGPIOManager::Initialize()
+                0x000000000001b2c4                CGPIOManager::ConnectInterrupt(CGPIOPin*)
+                0x000000000001b35c                CGPIOManager::DisconnectInterrupt(CGPIOPin*)
+                0x000000000001b3f8                CGPIOManager::InterruptHandler()
+                0x000000000001b4dc                CGPIOManager::InterruptStub(void*)
+ .text          0x000000000001b50c      0x4f4 ../../lib/libcircle.a(alloc.o)
+                0x000000000001b50c                mem_init
+                0x000000000001b550                mem_get_size
+                0x000000000001b578                malloc
+                0x000000000001b75c                free
+                0x000000000001b884                palloc
+                0x000000000001b97c                pfree
+ .text          0x000000000001ba00      0x15c ../../lib/libcircle.a(bcmmailbox.o)
+                0x000000000001ba00                CBcmMailBox::CBcmMailBox(unsigned int)
+                0x000000000001ba00                CBcmMailBox::CBcmMailBox(unsigned int)
+                0x000000000001ba10                CBcmMailBox::~CBcmMailBox()
+                0x000000000001ba10                CBcmMailBox::~CBcmMailBox()
+                0x000000000001ba14                CBcmMailBox::Flush()
+                0x000000000001ba54                CBcmMailBox::Read()
+                0x000000000001ba9c                CBcmMailBox::Write(unsigned int)
+                0x000000000001baf8                CBcmMailBox::WriteRead(unsigned int)
+ .text          0x000000000001bb5c       0xcc ../../lib/libcircle.a(libhelper.o)
+                0x000000000001bb5c                Divide
+ .text          0x000000000001bc28       0x20 ../../lib/libcircle.a(util_fast.o)
+                0x000000000001bc28                memcpyblk
+ .text          0x000000000001bc48      0x1e4 ../../lib/libcircle.a(bcmframebuffer.o)
+                0x000000000001bc48                CBcmFrameBuffer::CBcmFrameBuffer(unsigned int, unsigned int, unsigned int)
+                0x000000000001bc48                CBcmFrameBuffer::CBcmFrameBuffer(unsigned int, unsigned int, unsigned int)
+                0x000000000001bd50                CBcmFrameBuffer::~CBcmFrameBuffer()
+                0x000000000001bd50                CBcmFrameBuffer::~CBcmFrameBuffer()
+                0x000000000001bd78                CBcmFrameBuffer::SetPalette(unsigned char, unsigned short)
+                0x000000000001bd94                CBcmFrameBuffer::Initialize()
+                0x000000000001bde4                CBcmFrameBuffer::GetWidth() const
+                0x000000000001bdf0                CBcmFrameBuffer::GetHeight() const
+                0x000000000001bdfc                CBcmFrameBuffer::GetPitch() const
+                0x000000000001be08                CBcmFrameBuffer::GetDepth() const
+                0x000000000001be14                CBcmFrameBuffer::GetBuffer() const
+                0x000000000001be20                CBcmFrameBuffer::GetSize() const
+                0x000000000001be2c                _etext = .
+
+.glue_7         0x000000000001be2c        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x000000000001be2c        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x000000000001be2c        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x000000000001be2c        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x000000000001be2c        0x0
+ .iplt          0x0000000000000000        0x0 ../../lib/startup.o
+
+.rodata         0x000000000001be30     0x3f00
+ *(.rodata*)
+ .rodata        0x000000000001be30       0x28 kernel.o
+ .rodata.str1.4
+                0x000000000001be58       0x92 kernel.o
+                                         0x94 (size before relaxing)
+ *fill*         0x000000000001beea        0x6 
+ .rodata        0x000000000001bef0       0x20 ../../lib/usb/libusb.a(dwhcidevice.o)
+                0x000000000001bef0                vtable for CDWHCIDevice
+ .rodata.str1.4
+                0x000000000001bf10      0x55a ../../lib/usb/libusb.a(dwhcidevice.o)
+                                        0x560 (size before relaxing)
+ *fill*         0x000000000001c46a        0x2 
+ .rodata.str1.4
+                0x000000000001c46c       0x7d ../../lib/usb/libusb.a(dwhciregister.o)
+                                         0x80 (size before relaxing)
+ *fill*         0x000000000001c4e9        0x3 
+ .rodata.str1.4
+                0x000000000001c4ec      0x15a ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+                                        0x160 (size before relaxing)
+ *fill*         0x000000000001c646        0x2 
+ .rodata        0x000000000001c648       0x20 ../../lib/usb/libusb.a(usbdevice.o)
+                0x000000000001c648                vtable for CUSBDevice
+ .rodata.str1.4
+                0x000000000001c668      0x3a8 ../../lib/usb/libusb.a(usbdevice.o)
+                                        0x3ac (size before relaxing)
+ .rodata.str1.4
+                0x000000000001ca10      0x137 ../../lib/usb/libusb.a(usbendpoint.o)
+                                        0x14c (size before relaxing)
+ *fill*         0x000000000001cb47        0x1 
+ .rodata        0x000000000001cb48       0x18 ../../lib/usb/libusb.a(usbhostcontroller.o)
+                0x000000000001cb48                vtable for CUSBHostController
+ .rodata.str1.4
+                0x000000000001cb60       0x16 ../../lib/usb/libusb.a(usbhostcontroller.o)
+                                         0x24 (size before relaxing)
+ *fill*         0x000000000001cb76        0x2 
+ .rodata.str1.4
+                0x000000000001cb78       0x9e ../../lib/usb/libusb.a(usbrequest.o)
+                                         0xb4 (size before relaxing)
+ *fill*         0x000000000001cc16        0x2 
+ .rodata.str1.4
+                0x000000000001cc18       0x96 ../../lib/usb/libusb.a(usbdevicefactory.o)
+                                         0xa4 (size before relaxing)
+ *fill*         0x000000000001ccae        0x2 
+ .rodata        0x000000000001ccb0       0x30 ../../lib/usb/libusb.a(usbstandardhub.o)
+                0x000000000001ccb0                vtable for CUSBStandardHub
+ .rodata.str1.4
+                0x000000000001cce0      0x26c ../../lib/usb/libusb.a(usbstandardhub.o)
+ *fill*         0x000000000001cf4c        0x4 
+ .rodata        0x000000000001cf50       0x30 ../../lib/usb/libusb.a(usbmassdevice.o)
+                0x000000000001cf50                vtable for CUSBBulkOnlyMassStorageDevice
+ .rodata.str1.4
+                0x000000000001cf80      0x269 ../../lib/usb/libusb.a(usbmassdevice.o)
+                                        0x2a0 (size before relaxing)
+ *fill*         0x000000000001d1e9        0x7 
+ .rodata._ZTV20CDWHCIFrameScheduler
+                0x000000000001d1f0       0x28 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                0x000000000001d1f0                vtable for CDWHCIFrameScheduler
+ .rodata        0x000000000001d218       0x28 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                0x000000000001d218                vtable for CDWHCIFrameSchedulerNonPeriodic
+ .rodata.str1.4
+                0x000000000001d240       0x58 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+                                         0x6c (size before relaxing)
+ .rodata        0x000000000001d298       0x28 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+                0x000000000001d298                vtable for CDWHCIFrameSchedulerPeriodic
+ .rodata.str1.4
+                0x000000000001d2c0       0x17 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+                                         0x6c (size before relaxing)
+ *fill*         0x000000000001d2d7        0x1 
+ .rodata        0x000000000001d2d8       0x30 ../../lib/usb/libusb.a(usbkeyboard.o)
+                0x000000000001d2d8                vtable for CUSBKeyboardDevice
+ .rodata.str1.4
+                0x000000000001d308       0x4f ../../lib/usb/libusb.a(usbkeyboard.o)
+                                         0x50 (size before relaxing)
+ *fill*         0x000000000001d357        0x1 
+ .rodata        0x000000000001d358        0x8 ../../lib/usb/libusb.a(dwhcirootport.o)
+ .rodata.str1.4
+                0x000000000001d360       0x6b ../../lib/usb/libusb.a(dwhcirootport.o)
+                                         0xa4 (size before relaxing)
+ *fill*         0x000000000001d3cb        0x5 
+ .rodata        0x000000000001d3d0       0x30 ../../lib/usb/libusb.a(usbhiddevice.o)
+                0x000000000001d3d0                vtable for CUSBHIDDevice
+ .rodata.str1.4
+                0x000000000001d400       0xbd ../../lib/usb/libusb.a(usbhiddevice.o)
+                                         0xfc (size before relaxing)
+ *fill*         0x000000000001d4bd        0x3 
+ .rodata        0x000000000001d4c0       0x30 ../../lib/usb/libusb.a(usbmouse.o)
+                0x000000000001d4c0                vtable for CUSBMouseDevice
+ .rodata.str1.4
+                0x000000000001d4f0       0x49 ../../lib/usb/libusb.a(usbmouse.o)
+                                         0x68 (size before relaxing)
+ *fill*         0x000000000001d539        0x7 
+ .rodata        0x000000000001d540       0x30 ../../lib/usb/libusb.a(usbfunction.o)
+                0x000000000001d540                vtable for CUSBFunction
+ .rodata.str1.4
+                0x000000000001d570       0x85 ../../lib/usb/libusb.a(usbfunction.o)
+                                         0xe0 (size before relaxing)
+ *fill*         0x000000000001d5f5        0x3 
+ .rodata        0x000000000001d5f8       0x28 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+                0x000000000001d5f8                vtable for CDWHCIFrameSchedulerNoSplit
+ .rodata.str1.4
+                0x000000000001d620       0x1a ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x000000000001d63a        0x6 
+ .rodata        0x000000000001d640       0x30 ../../lib/usb/libusb.a(usbprinter.o)
+                0x000000000001d640                vtable for CUSBPrinterDevice
+ .rodata.str1.4
+                0x000000000001d670       0x43 ../../lib/usb/libusb.a(usbprinter.o)
+                                         0x78 (size before relaxing)
+ *fill*         0x000000000001d6b3        0x1 
+ .rodata.str1.4
+                0x000000000001d6b4       0x9b ../../lib/usb/libusb.a(usbconfigparser.o)
+                                         0xb8 (size before relaxing)
+ *fill*         0x000000000001d74f        0x1 
+ .rodata        0x000000000001d750       0x40 ../../lib/usb/libusb.a(smsc951x.o)
+                0x000000000001d750                vtable for CSMSC951xDevice
+ .rodata.str1.4
+                0x000000000001d790      0x1e6 ../../lib/usb/libusb.a(smsc951x.o)
+                                        0x21c (size before relaxing)
+ *fill*         0x000000000001d976        0x2 
+ .rodata.str1.4
+                0x000000000001d978       0x3e ../../lib/usb/libusb.a(macaddress.o)
+                                         0x6c (size before relaxing)
+ *fill*         0x000000000001d9b6        0x2 
+ .rodata        0x000000000001d9b8       0x30 ../../lib/usb/libusb.a(netdevice.o)
+                0x000000000001d9b8                vtable for CNetDevice
+ .rodata.str1.4
+                0x000000000001d9e8       0xa6 ../../lib/input/libinput.a(keyboardbehaviour.o)
+                                         0xb4 (size before relaxing)
+ *fill*         0x000000000001da8e        0x2 
+ .rodata        0x000000000001da90      0x300 ../../lib/input/libinput.a(keymap.o)
+                0x000000000001da90                CKeyMap::s_DefaultMap
+ .rodata.str1.4
+                0x000000000001dd90       0xd2 ../../lib/input/libinput.a(keymap.o)
+                                         0xe0 (size before relaxing)
+ *fill*         0x000000000001de62        0x2 
+ .rodata        0x000000000001de64        0x8 ../../lib/fs/libfs.a(partitionmanager.o)
+ .rodata.str1.4
+                0x000000000001de6c       0x95 ../../lib/fs/libfs.a(partitionmanager.o)
+                                         0x98 (size before relaxing)
+ *fill*         0x000000000001df01        0x7 
+ .rodata        0x000000000001df08       0x20 ../../lib/fs/libfs.a(partition.o)
+                0x000000000001df08                vtable for CPartition
+ .rodata.str1.4
+                0x000000000001df28        0xe ../../lib/fs/libfs.a(partition.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x000000000001df36        0x2 
+ .rodata.str1.4
+                0x000000000001df38       0x1d ../../lib/net/libnet.a(netsubsystem.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x000000000001df55        0x3 
+ .rodata.str1.4
+                0x000000000001df58       0xec ../../lib/net/libnet.a(transportlayer.o)
+                                        0x10c (size before relaxing)
+ .rodata.str1.4
+                0x000000000001e044       0xb5 ../../lib/net/libnet.a(networklayer.o)
+                                        0x134 (size before relaxing)
+ *fill*         0x000000000001e0f9        0x3 
+ .rodata.str1.4
+                0x000000000001e0fc       0x8f ../../lib/net/libnet.a(linklayer.o)
+                                         0xf4 (size before relaxing)
+ *fill*         0x000000000001e18b        0x1 
+ .rodata        0x000000000001e18c        0x8 ../../lib/net/libnet.a(netdevlayer.o)
+ .rodata.str1.4
+                0x000000000001e194       0x42 ../../lib/net/libnet.a(netdevlayer.o)
+                                         0xa4 (size before relaxing)
+ *fill*         0x000000000001e1d6        0x2 
+ .rodata.str1.4
+                0x000000000001e1d8       0x8b ../../lib/net/libnet.a(arphandler.o)
+                                        0x10c (size before relaxing)
+ *fill*         0x000000000001e263        0x1 
+ .rodata.str1.4
+                0x000000000001e264       0x31 ../../lib/net/libnet.a(icmphandler.o)
+                                         0x8c (size before relaxing)
+ *fill*         0x000000000001e295        0x3 
+ .rodata        0x000000000001e298       0x30 ../../lib/net/libnet.a(netconnection.o)
+                0x000000000001e298                vtable for CNetConnection
+ .rodata.str1.4
+                0x000000000001e2c8       0x24 ../../lib/net/libnet.a(netconnection.o)
+                                         0x50 (size before relaxing)
+ *fill*         0x000000000001e2ec        0x4 
+ .rodata        0x000000000001e2f0       0x30 ../../lib/net/libnet.a(udpconnection.o)
+                0x000000000001e2f0                vtable for CUDPConnection
+ .rodata.str1.4
+                0x000000000001e320       0x25 ../../lib/net/libnet.a(udpconnection.o)
+                                         0x7c (size before relaxing)
+ *fill*         0x000000000001e345        0x3 
+ .rodata        0x000000000001e348       0x10 ../../lib/net/libnet.a(netconfig.o)
+ .rodata.str1.4
+                0x000000000001e358       0x3a ../../lib/net/libnet.a(ipaddress.o)
+                                         0x78 (size before relaxing)
+ *fill*         0x000000000001e392        0x2 
+ .rodata.str1.4
+                0x000000000001e394       0x7d ../../lib/net/libnet.a(netqueue.o)
+                                         0xbc (size before relaxing)
+ *fill*         0x000000000001e411        0x3 
+ .rodata.str1.4
+                0x000000000001e414       0x3a ../../lib/net/libnet.a(checksumcalculator.o)
+                                         0x58 (size before relaxing)
+ *fill*         0x000000000001e44e        0x2 
+ .rodata.str1.4
+                0x000000000001e450       0x8c ../../lib/net/libnet.a(dnsclient.o)
+                                         0x90 (size before relaxing)
+ .rodata        0x000000000001e4dc        0x4 ../../lib/net/libnet.a(ntpclient.o)
+ .rodata.str1.4
+                0x000000000001e4e0       0x83 ../../lib/net/libnet.a(ntpclient.o)
+                                         0x9c (size before relaxing)
+ *fill*         0x000000000001e563        0x1 
+ .rodata.str1.4
+                0x000000000001e564       0x23 ../../lib/net/libnet.a(socket.o)
+                                         0x58 (size before relaxing)
+ *fill*         0x000000000001e587        0x1 
+ .rodata.str1.4
+                0x000000000001e588       0x5f ../../lib/libcircle.a(bcmpropertytags.o)
+                                         0x60 (size before relaxing)
+ *fill*         0x000000000001e5e7        0x1 
+ .rodata        0x000000000001e5e8       0x28 ../../lib/libcircle.a(gpiopin.o)
+                0x000000000001e5e8                vtable for CGPIOPin
+ .rodata.str1.4
+                0x000000000001e610      0x1cd ../../lib/libcircle.a(gpiopin.o)
+                                        0x1d0 (size before relaxing)
+ *fill*         0x000000000001e7dd        0x3 
+ .rodata.str1.4
+                0x000000000001e7e0       0x94 ../../lib/libcircle.a(memory.o)
+ .rodata.str1.4
+                0x000000000001e874        0xd ../../lib/libcircle.a(purecall.o)
+                                         0x14 (size before relaxing)
+ *fill*         0x000000000001e881        0x3 
+ .rodata.str1.4
+                0x000000000001e884       0x28 ../../lib/libcircle.a(synchronize.o)
+ .rodata        0x000000000001e8ac       0x30 ../../lib/libcircle.a(timer.o)
+                0x000000000001e8ac                CTimer::s_nDaysOfMonth
+ .rodata.str1.4
+                0x000000000001e8dc       0xf8 ../../lib/libcircle.a(timer.o)
+                                        0x13c (size before relaxing)
+ *fill*         0x000000000001e9d4        0x4 
+ .rodata        0x000000000001e9d8       0x20 ../../lib/libcircle.a(device.o)
+                0x000000000001e9d8                vtable for CDevice
+ .rodata.str1.4
+                0x000000000001e9f8       0x3a ../../lib/libcircle.a(koptions.o)
+                                         0x3c (size before relaxing)
+ *fill*         0x000000000001ea32        0x2 
+ .rodata.str1.4
+                0x000000000001ea34       0x3e ../../lib/libcircle.a(pagetable.o)
+                                         0x40 (size before relaxing)
+ *fill*         0x000000000001ea72        0x6 
+ .rodata        0x000000000001ea78       0x28 ../../lib/libcircle.a(screen.o)
+                0x000000000001ea78                vtable for CScreenDevice
+ .rodata.str1.4
+                0x0000000000000000        0x8 ../../lib/libcircle.a(screen.o)
+ .rodata.str1.4
+                0x000000000001eaa0       0x1d ../../lib/libcircle.a(assert.o)
+                                         0x20 (size before relaxing)
+ *fill*         0x000000000001eabd        0x3 
+ .rodata        0x000000000001eac0      0xdf0 ../../lib/libcircle.a(chargenerator.o)
+ .rodata.str1.4
+                0x000000000001f8b0       0x2a ../../lib/libcircle.a(chargenerator.o)
+                                         0x2c (size before relaxing)
+ *fill*         0x000000000001f8da        0x2 
+ .rodata        0x000000000001f8dc        0x8 ../../lib/libcircle.a(debug.o)
+ .rodata.str1.4
+                0x000000000001f8e4       0x8e ../../lib/libcircle.a(debug.o)
+                                         0x90 (size before relaxing)
+ *fill*         0x000000000001f972        0x2 
+ .rodata.str1.4
+                0x000000000001f974       0x60 ../../lib/libcircle.a(devicenameservice.o)
+                                         0x7c (size before relaxing)
+ .rodata.str1.4
+                0x000000000001f9d4       0x2c ../../lib/libcircle.a(logger.o)
+                                         0x34 (size before relaxing)
+ .rodata        0x000000000001fa00       0x20 ../../lib/libcircle.a(serial.o)
+                0x000000000001fa00                vtable for CSerialDevice
+ .rodata.str1.4
+                0x000000000001fa20       0x6f ../../lib/libcircle.a(serial.o)
+                                         0x70 (size before relaxing)
+ *fill*         0x000000000001fa8f        0x1 
+ .rodata        0x000000000001fa90       0x10 ../../lib/libcircle.a(string.o)
+                0x000000000001fa90                vtable for CString
+ .rodata.str1.4
+                0x0000000000000000       0x6f ../../lib/libcircle.a(string.o)
+                                          0x4 (size before relaxing)
+ .rodata        0x000000000001faa0        0x8 ../../lib/libcircle.a(exceptionhandler.o)
+ .rodata.str1.4
+                0x000000000001faa8       0xbb ../../lib/libcircle.a(exceptionhandler.o)
+                                         0xdc (size before relaxing)
+ *fill*         0x000000000001fb63        0x1 
+ .rodata.str1.4
+                0x000000000001fb64       0x5a ../../lib/libcircle.a(interrupt.o)
+                                         0x6c (size before relaxing)
+ *fill*         0x000000000001fbbe        0x2 
+ .rodata.str1.4
+                0x000000000001fbc0       0x7b ../../lib/libcircle.a(gpiomanager.o)
+                                         0x9c (size before relaxing)
+ *fill*         0x000000000001fc3b        0x1 
+ .rodata.str1.4
+                0x000000000001fc3c       0xbf ../../lib/libcircle.a(alloc.o)
+                                         0xc0 (size before relaxing)
+ *fill*         0x000000000001fcfb        0x1 
+ .rodata.str1.4
+                0x000000000001fcfc       0x23 ../../lib/libcircle.a(bcmmailbox.o)
+                                         0x24 (size before relaxing)
+ *fill*         0x000000000001fd1f        0x1 
+ .rodata.str1.4
+                0x000000000001fd20       0x10 ../../lib/libcircle.a(libhelper.o)
+                                         0x14 (size before relaxing)
+                0x000000000001fd30                __init_start = .
+
+.rel.dyn        0x000000000001fd30        0x0
+ .rel.iplt      0x0000000000000000        0x0 ../../lib/startup.o
+
+.init_array     0x000000000001fd30        0x8
+ *(.init_array*)
+ .init_array    0x000000000001fd30        0x4 ../../lib/libcircle.a(gpiopin.o)
+ .init_array    0x000000000001fd34        0x4 ../../lib/libcircle.a(alloc.o)
+                0x000000000001fd38                __init_end = .
+
+.data           0x000000000001fd38      0x15c
+ *(.data*)
+ .data          0x000000000001fd38        0x0 ../../lib/startup.o
+ .data          0x000000000001fd38        0x0 main.o
+ .data          0x000000000001fd38        0x0 kernel.o
+ .data          0x000000000001fd38        0x0 ../../lib/usb/libusb.a(dwhcidevice.o)
+ .data          0x000000000001fd38        0x0 ../../lib/usb/libusb.a(dwhciregister.o)
+ .data          0x000000000001fd38        0x0 ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+ .data          0x000000000001fd38        0x1 ../../lib/usb/libusb.a(usbdevice.o)
+                0x000000000001fd38                CUSBDevice::s_ucNextAddress
+ .data          0x000000000001fd39        0x0 ../../lib/usb/libusb.a(usbendpoint.o)
+ .data          0x000000000001fd39        0x0 ../../lib/usb/libusb.a(usbhostcontroller.o)
+ .data          0x000000000001fd39        0x0 ../../lib/usb/libusb.a(usbrequest.o)
+ .data          0x000000000001fd39        0x0 ../../lib/usb/libusb.a(usbdevicefactory.o)
+ *fill*         0x000000000001fd39        0x3 
+ .data          0x000000000001fd3c        0x4 ../../lib/usb/libusb.a(usbstandardhub.o)
+                0x000000000001fd3c                CUSBStandardHub::s_nDeviceNumber
+ .data          0x000000000001fd40        0x4 ../../lib/usb/libusb.a(usbmassdevice.o)
+                0x000000000001fd40                CUSBBulkOnlyMassStorageDevice::s_nDeviceNumber
+ .data          0x000000000001fd44        0x0 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .data          0x000000000001fd44        0x0 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .data          0x000000000001fd44        0x4 ../../lib/usb/libusb.a(usbkeyboard.o)
+                0x000000000001fd44                CUSBKeyboardDevice::s_nDeviceNumber
+ .data          0x000000000001fd48        0x0 ../../lib/usb/libusb.a(dwhcirootport.o)
+ .data          0x000000000001fd48        0x0 ../../lib/usb/libusb.a(usbhiddevice.o)
+ .data          0x000000000001fd48        0x4 ../../lib/usb/libusb.a(usbmouse.o)
+                0x000000000001fd48                CUSBMouseDevice::s_nDeviceNumber
+ .data          0x000000000001fd4c        0x0 ../../lib/usb/libusb.a(usbfunction.o)
+ .data          0x000000000001fd4c        0x0 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .data          0x000000000001fd4c        0x4 ../../lib/usb/libusb.a(usbprinter.o)
+                0x000000000001fd4c                CUSBPrinterDevice::s_nDeviceNumber
+ .data          0x000000000001fd50        0x0 ../../lib/usb/libusb.a(usbconfigparser.o)
+ .data          0x000000000001fd50        0x0 ../../lib/usb/libusb.a(smsc951x.o)
+ .data          0x000000000001fd50        0x0 ../../lib/usb/libusb.a(macaddress.o)
+ .data          0x000000000001fd50        0x0 ../../lib/usb/libusb.a(netdevice.o)
+ .data          0x000000000001fd50        0x0 ../../lib/input/libinput.a(keyboardbehaviour.o)
+ .data          0x000000000001fd50       0xcc ../../lib/input/libinput.a(keymap.o)
+                0x000000000001fd50                CKeyMap::s_KeyStrings
+ .data          0x000000000001fe1c        0x0 ../../lib/fs/libfs.a(partitionmanager.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/fs/libfs.a(partition.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(netsubsystem.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(transportlayer.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(networklayer.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(linklayer.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(netdevlayer.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(arphandler.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(icmphandler.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(netconnection.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(udpconnection.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(netconfig.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(ipaddress.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(netqueue.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(checksumcalculator.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(dnsclient.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(ntpclient.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/net/libnet.a(socket.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(actled.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(bcmpropertytags.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(gpiopin.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(libstub.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(memio.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(memory.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(new.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(purecall.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(synchronize.o)
+ .data          0x000000000001fe1c        0x0 ../../lib/libcircle.a(sysinit.o)
+ .data          0x000000000001fe1c       0x30 ../../lib/libcircle.a(timer.o)
+                0x000000000001fe1c                CTimer::s_pMonthName
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(util.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(device.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(koptions.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(pagetable.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(screen.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(assert.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(chargenerator.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(debug.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(devicenameservice.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(logger.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(serial.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(string.o)
+ .data          0x000000000001fe4c        0x0 ../../lib/libcircle.a(delayloop.o)
+ .data          0x000000000001fe4c       0x10 ../../lib/libcircle.a(exceptionhandler.o)
+                0x000000000001fe4c                CExceptionHandler::s_pExceptionName
+ .data          0x000000000001fe5c        0x0 ../../lib/libcircle.a(exceptionstub.o)
+ .data          0x000000000001fe5c        0x0 ../../lib/libcircle.a(interrupt.o)
+ .data          0x000000000001fe5c        0x0 ../../lib/libcircle.a(gpiomanager.o)
+ .data          0x000000000001fe5c       0x38 ../../lib/libcircle.a(alloc.o)
+ .data          0x000000000001fe94        0x0 ../../lib/libcircle.a(bcmmailbox.o)
+ .data          0x000000000001fe94        0x0 ../../lib/libcircle.a(libhelper.o)
+ .data          0x000000000001fe94        0x0 ../../lib/libcircle.a(util_fast.o)
+ .data          0x000000000001fe94        0x0 ../../lib/libcircle.a(bcmframebuffer.o)
+                0x000000000001fe94                __bss_start = .
+
+.igot.plt       0x000000000001fe94        0x0
+ .igot.plt      0x0000000000000000        0x0 ../../lib/startup.o
+
+.bss            0x000000000001fe94       0x4c
+ *(.bss*)
+ .bss           0x000000000001fe94        0x0 ../../lib/startup.o
+ .bss           0x000000000001fe94        0x0 main.o
+ .bss           0x000000000001fe94        0x0 kernel.o
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhcidevice.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhciregister.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbdevice.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbendpoint.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbhostcontroller.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbrequest.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbdevicefactory.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbstandardhub.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbmassdevice.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbkeyboard.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhcirootport.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbhiddevice.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbmouse.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbfunction.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbprinter.o)
+ .bss           0x000000000001fe94        0x0 ../../lib/usb/libusb.a(usbconfigparser.o)
+ .bss           0x000000000001fe94        0x4 ../../lib/usb/libusb.a(smsc951x.o)
+                0x000000000001fe94                CSMSC951xDevice::s_nDeviceNumber
+ .bss           0x000000000001fe98        0x0 ../../lib/usb/libusb.a(macaddress.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/usb/libusb.a(netdevice.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/input/libinput.a(keyboardbehaviour.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/input/libinput.a(keymap.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/fs/libfs.a(partitionmanager.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/fs/libfs.a(partition.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(netsubsystem.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(transportlayer.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(networklayer.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(linklayer.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(netdevlayer.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(arphandler.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(icmphandler.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(netconnection.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(udpconnection.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(netconfig.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(ipaddress.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(netqueue.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(checksumcalculator.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(dnsclient.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(ntpclient.o)
+ .bss           0x000000000001fe98        0x0 ../../lib/net/libnet.a(socket.o)
+ .bss           0x000000000001fe98        0x4 ../../lib/libcircle.a(actled.o)
+                0x000000000001fe98                CActLED::s_pThis
+ .bss           0x000000000001fe9c        0x0 ../../lib/libcircle.a(bcmpropertytags.o)
+ .bss           0x000000000001fe9c        0x4 ../../lib/libcircle.a(gpiopin.o)
+                0x000000000001fe9c                CGPIOPin::s_SpinLock
+ .bss           0x000000000001fea0        0x0 ../../lib/libcircle.a(libstub.o)
+ .bss           0x000000000001fea0        0x0 ../../lib/libcircle.a(memio.o)
+ .bss           0x000000000001fea0        0x0 ../../lib/libcircle.a(memory.o)
+ .bss           0x000000000001fea0        0x0 ../../lib/libcircle.a(new.o)
+ .bss           0x000000000001fea0        0x0 ../../lib/libcircle.a(purecall.o)
+ .bss           0x000000000001fea0        0x8 ../../lib/libcircle.a(synchronize.o)
+ .bss           0x000000000001fea8        0x4 ../../lib/libcircle.a(sysinit.o)
+                0x000000000001fea8                __dso_handle
+ .bss           0x000000000001feac        0x4 ../../lib/libcircle.a(timer.o)
+                0x000000000001feac                CTimer::s_pThis
+ .bss           0x000000000001feb0        0x0 ../../lib/libcircle.a(util.o)
+ .bss           0x000000000001feb0        0x0 ../../lib/libcircle.a(device.o)
+ .bss           0x000000000001feb0        0x4 ../../lib/libcircle.a(koptions.o)
+                0x000000000001feb0                CKernelOptions::s_pThis
+ .bss           0x000000000001feb4        0x0 ../../lib/libcircle.a(pagetable.o)
+ .bss           0x000000000001feb4        0x0 ../../lib/libcircle.a(screen.o)
+ .bss           0x000000000001feb4        0x0 ../../lib/libcircle.a(assert.o)
+ .bss           0x000000000001feb4        0x0 ../../lib/libcircle.a(chargenerator.o)
+ .bss           0x000000000001feb4        0x0 ../../lib/libcircle.a(debug.o)
+ .bss           0x000000000001feb4        0x4 ../../lib/libcircle.a(devicenameservice.o)
+                0x000000000001feb4                CDeviceNameService::s_This
+ .bss           0x000000000001feb8        0x4 ../../lib/libcircle.a(logger.o)
+                0x000000000001feb8                CLogger::s_pThis
+ .bss           0x000000000001febc        0x0 ../../lib/libcircle.a(serial.o)
+ .bss           0x000000000001febc        0x0 ../../lib/libcircle.a(string.o)
+ .bss           0x000000000001febc        0x0 ../../lib/libcircle.a(delayloop.o)
+ .bss           0x000000000001febc        0x4 ../../lib/libcircle.a(exceptionhandler.o)
+                0x000000000001febc                CExceptionHandler::s_pThis
+ .bss           0x000000000001fec0        0x0 ../../lib/libcircle.a(exceptionstub.o)
+ .bss           0x000000000001fec0        0x4 ../../lib/libcircle.a(interrupt.o)
+                0x000000000001fec0                CInterruptSystem::s_pThis
+ .bss           0x000000000001fec4        0x0 ../../lib/libcircle.a(gpiomanager.o)
+ .bss           0x000000000001fec4       0x1c ../../lib/libcircle.a(alloc.o)
+ .bss           0x000000000001fee0        0x0 ../../lib/libcircle.a(bcmmailbox.o)
+ .bss           0x000000000001fee0        0x0 ../../lib/libcircle.a(libhelper.o)
+ .bss           0x000000000001fee0        0x0 ../../lib/libcircle.a(util_fast.o)
+ .bss           0x000000000001fee0        0x0 ../../lib/libcircle.a(bcmframebuffer.o)
+                0x000000000001fee0                _end = .
+LOAD ../../lib/startup.o
+LOAD main.o
+LOAD kernel.o
+LOAD ../../lib/usb/libusb.a
+LOAD ../../lib/input/libinput.a
+LOAD ../../lib/fs/libfs.a
+LOAD ../../lib/net/libnet.a
+LOAD ../../lib/libcircle.a
+OUTPUT(kernel.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ .ARM.attributes
+                0x0000000000000000       0x1a ../../lib/startup.o
+ .ARM.attributes
+                0x000000000000001a       0x32 main.o
+ .ARM.attributes
+                0x000000000000004c       0x32 kernel.o
+ .ARM.attributes
+                0x000000000000007e       0x32 ../../lib/usb/libusb.a(dwhcidevice.o)
+ .ARM.attributes
+                0x00000000000000b0       0x32 ../../lib/usb/libusb.a(dwhciregister.o)
+ .ARM.attributes
+                0x00000000000000e2       0x32 ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+ .ARM.attributes
+                0x0000000000000114       0x32 ../../lib/usb/libusb.a(usbdevice.o)
+ .ARM.attributes
+                0x0000000000000146       0x32 ../../lib/usb/libusb.a(usbendpoint.o)
+ .ARM.attributes
+                0x0000000000000178       0x32 ../../lib/usb/libusb.a(usbhostcontroller.o)
+ .ARM.attributes
+                0x00000000000001aa       0x32 ../../lib/usb/libusb.a(usbrequest.o)
+ .ARM.attributes
+                0x00000000000001dc       0x32 ../../lib/usb/libusb.a(usbdevicefactory.o)
+ .ARM.attributes
+                0x000000000000020e       0x32 ../../lib/usb/libusb.a(usbstandardhub.o)
+ .ARM.attributes
+                0x0000000000000240       0x32 ../../lib/usb/libusb.a(usbmassdevice.o)
+ .ARM.attributes
+                0x0000000000000272       0x32 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .ARM.attributes
+                0x00000000000002a4       0x32 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .ARM.attributes
+                0x00000000000002d6       0x32 ../../lib/usb/libusb.a(usbkeyboard.o)
+ .ARM.attributes
+                0x0000000000000308       0x32 ../../lib/usb/libusb.a(dwhcirootport.o)
+ .ARM.attributes
+                0x000000000000033a       0x32 ../../lib/usb/libusb.a(usbhiddevice.o)
+ .ARM.attributes
+                0x000000000000036c       0x32 ../../lib/usb/libusb.a(usbmouse.o)
+ .ARM.attributes
+                0x000000000000039e       0x32 ../../lib/usb/libusb.a(usbfunction.o)
+ .ARM.attributes
+                0x00000000000003d0       0x32 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .ARM.attributes
+                0x0000000000000402       0x32 ../../lib/usb/libusb.a(usbprinter.o)
+ .ARM.attributes
+                0x0000000000000434       0x32 ../../lib/usb/libusb.a(usbconfigparser.o)
+ .ARM.attributes
+                0x0000000000000466       0x32 ../../lib/usb/libusb.a(smsc951x.o)
+ .ARM.attributes
+                0x0000000000000498       0x32 ../../lib/usb/libusb.a(macaddress.o)
+ .ARM.attributes
+                0x00000000000004ca       0x32 ../../lib/usb/libusb.a(netdevice.o)
+ .ARM.attributes
+                0x00000000000004fc       0x32 ../../lib/input/libinput.a(keyboardbehaviour.o)
+ .ARM.attributes
+                0x000000000000052e       0x32 ../../lib/input/libinput.a(keymap.o)
+ .ARM.attributes
+                0x0000000000000560       0x32 ../../lib/fs/libfs.a(partitionmanager.o)
+ .ARM.attributes
+                0x0000000000000592       0x32 ../../lib/fs/libfs.a(partition.o)
+ .ARM.attributes
+                0x00000000000005c4       0x32 ../../lib/net/libnet.a(netsubsystem.o)
+ .ARM.attributes
+                0x00000000000005f6       0x32 ../../lib/net/libnet.a(transportlayer.o)
+ .ARM.attributes
+                0x0000000000000628       0x32 ../../lib/net/libnet.a(networklayer.o)
+ .ARM.attributes
+                0x000000000000065a       0x32 ../../lib/net/libnet.a(linklayer.o)
+ .ARM.attributes
+                0x000000000000068c       0x32 ../../lib/net/libnet.a(netdevlayer.o)
+ .ARM.attributes
+                0x00000000000006be       0x32 ../../lib/net/libnet.a(arphandler.o)
+ .ARM.attributes
+                0x00000000000006f0       0x32 ../../lib/net/libnet.a(icmphandler.o)
+ .ARM.attributes
+                0x0000000000000722       0x32 ../../lib/net/libnet.a(netconnection.o)
+ .ARM.attributes
+                0x0000000000000754       0x32 ../../lib/net/libnet.a(udpconnection.o)
+ .ARM.attributes
+                0x0000000000000786       0x32 ../../lib/net/libnet.a(netconfig.o)
+ .ARM.attributes
+                0x00000000000007b8       0x32 ../../lib/net/libnet.a(ipaddress.o)
+ .ARM.attributes
+                0x00000000000007ea       0x32 ../../lib/net/libnet.a(netqueue.o)
+ .ARM.attributes
+                0x000000000000081c       0x32 ../../lib/net/libnet.a(checksumcalculator.o)
+ .ARM.attributes
+                0x000000000000084e       0x32 ../../lib/net/libnet.a(dnsclient.o)
+ .ARM.attributes
+                0x0000000000000880       0x32 ../../lib/net/libnet.a(ntpclient.o)
+ .ARM.attributes
+                0x00000000000008b2       0x32 ../../lib/net/libnet.a(socket.o)
+ .ARM.attributes
+                0x00000000000008e4       0x32 ../../lib/libcircle.a(actled.o)
+ .ARM.attributes
+                0x0000000000000916       0x32 ../../lib/libcircle.a(bcmpropertytags.o)
+ .ARM.attributes
+                0x0000000000000948       0x32 ../../lib/libcircle.a(gpiopin.o)
+ .ARM.attributes
+                0x000000000000097a       0x1a ../../lib/libcircle.a(libstub.o)
+ .ARM.attributes
+                0x0000000000000994       0x32 ../../lib/libcircle.a(memio.o)
+ .ARM.attributes
+                0x00000000000009c6       0x32 ../../lib/libcircle.a(memory.o)
+ .ARM.attributes
+                0x00000000000009f8       0x32 ../../lib/libcircle.a(new.o)
+ .ARM.attributes
+                0x0000000000000a2a       0x32 ../../lib/libcircle.a(purecall.o)
+ .ARM.attributes
+                0x0000000000000a5c       0x32 ../../lib/libcircle.a(synchronize.o)
+ .ARM.attributes
+                0x0000000000000a8e       0x32 ../../lib/libcircle.a(sysinit.o)
+ .ARM.attributes
+                0x0000000000000ac0       0x32 ../../lib/libcircle.a(timer.o)
+ .ARM.attributes
+                0x0000000000000af2       0x32 ../../lib/libcircle.a(util.o)
+ .ARM.attributes
+                0x0000000000000b24       0x32 ../../lib/libcircle.a(device.o)
+ .ARM.attributes
+                0x0000000000000b56       0x32 ../../lib/libcircle.a(koptions.o)
+ .ARM.attributes
+                0x0000000000000b88       0x32 ../../lib/libcircle.a(pagetable.o)
+ .ARM.attributes
+                0x0000000000000bba       0x32 ../../lib/libcircle.a(screen.o)
+ .ARM.attributes
+                0x0000000000000bec       0x32 ../../lib/libcircle.a(assert.o)
+ .ARM.attributes
+                0x0000000000000c1e       0x32 ../../lib/libcircle.a(chargenerator.o)
+ .ARM.attributes
+                0x0000000000000c50       0x32 ../../lib/libcircle.a(debug.o)
+ .ARM.attributes
+                0x0000000000000c82       0x32 ../../lib/libcircle.a(devicenameservice.o)
+ .ARM.attributes
+                0x0000000000000cb4       0x32 ../../lib/libcircle.a(logger.o)
+ .ARM.attributes
+                0x0000000000000ce6       0x32 ../../lib/libcircle.a(serial.o)
+ .ARM.attributes
+                0x0000000000000d18       0x32 ../../lib/libcircle.a(string.o)
+ .ARM.attributes
+                0x0000000000000d4a       0x1a ../../lib/libcircle.a(delayloop.o)
+ .ARM.attributes
+                0x0000000000000d64       0x32 ../../lib/libcircle.a(exceptionhandler.o)
+ .ARM.attributes
+                0x0000000000000d96       0x1a ../../lib/libcircle.a(exceptionstub.o)
+ .ARM.attributes
+                0x0000000000000db0       0x32 ../../lib/libcircle.a(interrupt.o)
+ .ARM.attributes
+                0x0000000000000de2       0x32 ../../lib/libcircle.a(gpiomanager.o)
+ .ARM.attributes
+                0x0000000000000e14       0x32 ../../lib/libcircle.a(alloc.o)
+ .ARM.attributes
+                0x0000000000000e46       0x32 ../../lib/libcircle.a(bcmmailbox.o)
+ .ARM.attributes
+                0x0000000000000e78       0x32 ../../lib/libcircle.a(libhelper.o)
+ .ARM.attributes
+                0x0000000000000eaa       0x1a ../../lib/libcircle.a(util_fast.o)
+ .ARM.attributes
+                0x0000000000000ec4       0x32 ../../lib/libcircle.a(bcmframebuffer.o)
+
+.comment        0x0000000000000000       0x1f
+ .comment       0x0000000000000000       0x1f main.o
+                                         0x20 (size before relaxing)
+ .comment       0x0000000000000000       0x20 kernel.o
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhcidevice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciregister.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhcixferstagedata.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbdevice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbendpoint.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbhostcontroller.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbrequest.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbdevicefactory.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbstandardhub.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbmassdevice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciframeschednper.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciframeschedper.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbkeyboard.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhcirootport.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbhiddevice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbmouse.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbfunction.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(dwhciframeschednsplit.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbprinter.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(usbconfigparser.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(smsc951x.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(macaddress.o)
+ .comment       0x0000000000000000       0x20 ../../lib/usb/libusb.a(netdevice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/input/libinput.a(keyboardbehaviour.o)
+ .comment       0x0000000000000000       0x20 ../../lib/input/libinput.a(keymap.o)
+ .comment       0x0000000000000000       0x20 ../../lib/fs/libfs.a(partitionmanager.o)
+ .comment       0x0000000000000000       0x20 ../../lib/fs/libfs.a(partition.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(netsubsystem.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(transportlayer.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(networklayer.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(linklayer.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(netdevlayer.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(arphandler.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(icmphandler.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(netconnection.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(udpconnection.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(netconfig.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(ipaddress.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(netqueue.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(checksumcalculator.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(dnsclient.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(ntpclient.o)
+ .comment       0x0000000000000000       0x20 ../../lib/net/libnet.a(socket.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(actled.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(bcmpropertytags.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(gpiopin.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(memio.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(memory.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(new.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(purecall.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(synchronize.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(sysinit.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(timer.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(util.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(device.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(koptions.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(pagetable.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(screen.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(assert.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(chargenerator.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(debug.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(devicenameservice.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(logger.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(serial.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(string.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(exceptionhandler.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(interrupt.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(gpiomanager.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(alloc.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(bcmmailbox.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(libhelper.o)
+ .comment       0x0000000000000000       0x20 ../../lib/libcircle.a(bcmframebuffer.o)

@@ -1,0 +1,301 @@
+
+kernel.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <_ZN7CKernelC1Ev>:
+   0:	e92d41f0 	push	{r4, r5, r6, r7, r8, lr}
+   4:	e1a05000 	mov	r5, r0
+   8:	e3a01001 	mov	r1, #1
+   c:	ebfffffe 	bl	0 <_ZN13CMemorySystemC1Ei>
+  10:	e2858010 	add	r8, r5, #16
+  14:	e1a00008 	mov	r0, r8
+  18:	ebfffffe 	bl	0 <_ZN7CActLEDC1Ev>
+  1c:	e2854018 	add	r4, r5, #24
+  20:	e1a00004 	mov	r0, r4
+  24:	ebfffffe 	bl	0 <_ZN14CKernelOptionsC1Ev>
+  28:	e2850d11 	add	r0, r5, #1088	; 0x440
+  2c:	e280000c 	add	r0, r0, #12
+  30:	ebfffffe 	bl	0 <_ZN18CDeviceNameServiceC1Ev>
+  34:	e1a00004 	mov	r0, r4
+  38:	ebfffffe 	bl	0 <_ZNK14CKernelOptions8GetWidthEv>
+  3c:	e1a06000 	mov	r6, r0
+  40:	e1a00004 	mov	r0, r4
+  44:	ebfffffe 	bl	0 <_ZNK14CKernelOptions9GetHeightEv>
+  48:	e1a02000 	mov	r2, r0
+  4c:	e2850e45 	add	r0, r5, #1104	; 0x450
+  50:	e2800004 	add	r0, r0, #4
+  54:	e1a01006 	mov	r1, r6
+  58:	e3a03000 	mov	r3, #0
+  5c:	ebfffffe 	bl	0 <_ZN13CScreenDeviceC1Ejji>
+  60:	e2850e4a 	add	r0, r5, #1184	; 0x4a0
+  64:	e2800008 	add	r0, r0, #8
+  68:	ebfffffe 	bl	0 <_ZN13CSerialDeviceC1Ev>
+  6c:	e2857e4f 	add	r7, r5, #1264	; 0x4f0
+  70:	e1a00007 	mov	r0, r7
+  74:	ebfffffe 	bl	0 <_ZN17CExceptionHandlerC1Ev>
+  78:	e2877004 	add	r7, r7, #4
+  7c:	e1a00007 	mov	r0, r7
+  80:	ebfffffe 	bl	0 <_ZN16CInterruptSystemC1Ev>
+  84:	e2856e73 	add	r6, r5, #1840	; 0x730
+  88:	e2866004 	add	r6, r6, #4
+  8c:	e1a00006 	mov	r0, r6
+  90:	e1a01007 	mov	r1, r7
+  94:	ebfffffe 	bl	0 <_ZN6CTimerC1EP16CInterruptSystem>
+  98:	e1a00004 	mov	r0, r4
+  9c:	ebfffffe 	bl	0 <_ZNK14CKernelOptions11GetLogLevelEv>
+  a0:	e1a01000 	mov	r1, r0
+  a4:	e2850e89 	add	r0, r5, #2192	; 0x890
+  a8:	e1a02006 	mov	r2, r6
+  ac:	ebfffffe 	bl	0 <_ZN7CLoggerC1EjP6CTimer>
+  b0:	e2850e8a 	add	r0, r5, #2208	; 0x8a0
+  b4:	e280000c 	add	r0, r0, #12
+  b8:	e1a01007 	mov	r1, r7
+  bc:	e1a02006 	mov	r2, r6
+  c0:	ebfffffe 	bl	0 <_ZN12CDWHCIDeviceC1EP16CInterruptSystemP6CTimer>
+  c4:	e2850e95 	add	r0, r5, #2384	; 0x950
+  c8:	e2800008 	add	r0, r0, #8
+  cc:	ebfffffe 	bl	0 <_ZN14CFATFileSystemC1Ev>
+  d0:	e1a00008 	mov	r0, r8
+  d4:	e3a01005 	mov	r1, #5
+  d8:	e3a020c8 	mov	r2, #200	; 0xc8
+  dc:	e3a03f7d 	mov	r3, #500	; 0x1f4
+  e0:	ebfffffe 	bl	0 <_ZN7CActLED5BlinkEjjj>
+  e4:	e59f6068 	ldr	r6, [pc, #104]	; 154 <_ZN7CKernelC1Ev+0x154>
+  e8:	e1a00006 	mov	r0, r6
+  ec:	ebfffffe 	bl	0 <_Znaj>
+  f0:	e59f4060 	ldr	r4, [pc, #96]	; 158 <_ZN7CKernelC1Ev+0x158>
+  f4:	e5840000 	str	r0, [r4]
+  f8:	e1a00006 	mov	r0, r6
+  fc:	ebfffffe 	bl	0 <_Znaj>
+ 100:	e5840004 	str	r0, [r4, #4]
+ 104:	e3a03001 	mov	r3, #1
+ 108:	ee0f3f1c 	mcr	15, 0, r3, cr15, cr12, {0}
+ 10c:	e3a03000 	mov	r3, #0
+ 110:	e59f7044 	ldr	r7, [pc, #68]	; 15c <_ZN7CKernelC1Ev+0x15c>
+ 114:	e1a02004 	mov	r2, r4
+ 118:	e5971000 	ldr	r1, [r7]
+ 11c:	e5910000 	ldr	r0, [r1]
+ 120:	ee1f4f3c 	mrc	15, 0, r4, cr15, cr12, {1}
+ 124:	ee1fcf3c 	mrc	15, 0, ip, cr15, cr12, {1}
+ 128:	e5921000 	ldr	r1, [r2]
+ 12c:	e2000701 	and	r0, r0, #262144	; 0x40000
+ 130:	e7810003 	str	r0, [r1, r3]
+ 134:	e5921004 	ldr	r1, [r2, #4]
+ 138:	e064c00c 	rsb	ip, r4, ip
+ 13c:	e781c003 	str	ip, [r1, r3]
+ 140:	e2833004 	add	r3, r3, #4
+ 144:	e1530006 	cmp	r3, r6
+ 148:	1afffff2 	bne	118 <_ZN7CKernelC1Ev+0x118>
+ 14c:	e1a00005 	mov	r0, r5
+ 150:	e8bd81f0 	pop	{r4, r5, r6, r7, r8, pc}
+ 154:	001e8480 	.word	0x001e8480
+	...
+
+00000160 <_ZN7CKernel10InitializeEv>:
+ 160:	e92d4038 	push	{r3, r4, r5, lr}
+ 164:	e1a04000 	mov	r4, r0
+ 168:	e2805e45 	add	r5, r0, #1104	; 0x450
+ 16c:	e2855004 	add	r5, r5, #4
+ 170:	e1a00005 	mov	r0, r5
+ 174:	ebfffffe 	bl	0 <_ZN13CScreenDevice10InitializeEv>
+ 178:	e3500000 	cmp	r0, #0
+ 17c:	08bd8038 	popeq	{r3, r4, r5, pc}
+ 180:	e2840e4a 	add	r0, r4, #1184	; 0x4a0
+ 184:	e2800008 	add	r0, r0, #8
+ 188:	e59f1078 	ldr	r1, [pc, #120]	; 208 <_ZN7CKernel10InitializeEv+0xa8>
+ 18c:	ebfffffe 	bl	0 <_ZN13CSerialDevice10InitializeEj>
+ 190:	e3500000 	cmp	r0, #0
+ 194:	08bd8038 	popeq	{r3, r4, r5, pc}
+ 198:	e2840018 	add	r0, r4, #24
+ 19c:	ebfffffe 	bl	0 <_ZNK14CKernelOptions12GetLogDeviceEv>
+ 1a0:	e1a01000 	mov	r1, r0
+ 1a4:	e2840d11 	add	r0, r4, #1088	; 0x440
+ 1a8:	e280000c 	add	r0, r0, #12
+ 1ac:	e3a02000 	mov	r2, #0
+ 1b0:	ebfffffe 	bl	0 <_ZN18CDeviceNameService9GetDeviceEPKci>
+ 1b4:	e2501000 	subs	r1, r0, #0
+ 1b8:	e2840e89 	add	r0, r4, #2192	; 0x890
+ 1bc:	e3510000 	cmp	r1, #0
+ 1c0:	01a01005 	moveq	r1, r5
+ 1c4:	ebfffffe 	bl	0 <_ZN7CLogger10InitializeEP7CDevice>
+ 1c8:	e3500000 	cmp	r0, #0
+ 1cc:	08bd8038 	popeq	{r3, r4, r5, pc}
+ 1d0:	e2840e4f 	add	r0, r4, #1264	; 0x4f0
+ 1d4:	e2800004 	add	r0, r0, #4
+ 1d8:	ebfffffe 	bl	0 <_ZN16CInterruptSystem10InitializeEv>
+ 1dc:	e3500000 	cmp	r0, #0
+ 1e0:	08bd8038 	popeq	{r3, r4, r5, pc}
+ 1e4:	e2840e73 	add	r0, r4, #1840	; 0x730
+ 1e8:	e2800004 	add	r0, r0, #4
+ 1ec:	ebfffffe 	bl	0 <_ZN6CTimer10InitializeEv>
+ 1f0:	e3500000 	cmp	r0, #0
+ 1f4:	08bd8038 	popeq	{r3, r4, r5, pc}
+ 1f8:	e2840e8a 	add	r0, r4, #2208	; 0x8a0
+ 1fc:	e280000c 	add	r0, r0, #12
+ 200:	ebfffffe 	bl	0 <_ZN12CDWHCIDevice10InitializeEv>
+ 204:	e8bd8038 	pop	{r3, r4, r5, pc}
+ 208:	0001c200 	.word	0x0001c200
+
+0000020c <_ZN7CKernelD1Ev>:
+ 20c:	e92d4038 	push	{r3, r4, r5, lr}
+ 210:	e1a04000 	mov	r4, r0
+ 214:	e2800e95 	add	r0, r0, #2384	; 0x950
+ 218:	e2800008 	add	r0, r0, #8
+ 21c:	ebfffffe 	bl	0 <_ZN14CFATFileSystemD1Ev>
+ 220:	e2840e8a 	add	r0, r4, #2208	; 0x8a0
+ 224:	e280000c 	add	r0, r0, #12
+ 228:	ebfffffe 	bl	0 <_ZN12CDWHCIDeviceD1Ev>
+ 22c:	e2840e89 	add	r0, r4, #2192	; 0x890
+ 230:	ebfffffe 	bl	0 <_ZN7CLoggerD1Ev>
+ 234:	e2840e73 	add	r0, r4, #1840	; 0x730
+ 238:	e2800004 	add	r0, r0, #4
+ 23c:	ebfffffe 	bl	0 <_ZN6CTimerD1Ev>
+ 240:	e2845e4f 	add	r5, r4, #1264	; 0x4f0
+ 244:	e2850004 	add	r0, r5, #4
+ 248:	ebfffffe 	bl	0 <_ZN16CInterruptSystemD1Ev>
+ 24c:	e1a00005 	mov	r0, r5
+ 250:	ebfffffe 	bl	0 <_ZN17CExceptionHandlerD1Ev>
+ 254:	e2840e4a 	add	r0, r4, #1184	; 0x4a0
+ 258:	e2800008 	add	r0, r0, #8
+ 25c:	ebfffffe 	bl	0 <_ZN13CSerialDeviceD1Ev>
+ 260:	e2840e45 	add	r0, r4, #1104	; 0x450
+ 264:	e2800004 	add	r0, r0, #4
+ 268:	ebfffffe 	bl	0 <_ZN13CScreenDeviceD1Ev>
+ 26c:	e2840d11 	add	r0, r4, #1088	; 0x440
+ 270:	e280000c 	add	r0, r0, #12
+ 274:	ebfffffe 	bl	0 <_ZN18CDeviceNameServiceD1Ev>
+ 278:	e2840018 	add	r0, r4, #24
+ 27c:	ebfffffe 	bl	0 <_ZN14CKernelOptionsD1Ev>
+ 280:	e2840010 	add	r0, r4, #16
+ 284:	ebfffffe 	bl	0 <_ZN7CActLEDD1Ev>
+ 288:	e1a00004 	mov	r0, r4
+ 28c:	ebfffffe 	bl	0 <_ZN13CMemorySystemD1Ev>
+ 290:	e1a00004 	mov	r0, r4
+ 294:	e8bd8038 	pop	{r3, r4, r5, pc}
+
+00000298 <_ZN7CKernel3RunEv>:
+ 298:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 29c:	e24dd02c 	sub	sp, sp, #44	; 0x2c
+ 2a0:	e1a0a000 	mov	sl, r0
+ 2a4:	e2800d11 	add	r0, r0, #1088	; 0x440
+ 2a8:	e280000c 	add	r0, r0, #12
+ 2ac:	e59f11b0 	ldr	r1, [pc, #432]	; 464 <_ZN7CKernel3RunEv+0x1cc>
+ 2b0:	e3a02001 	mov	r2, #1
+ 2b4:	ebfffffe 	bl	0 <_ZN18CDeviceNameService9GetDeviceEPKci>
+ 2b8:	e1a01000 	mov	r1, r0
+ 2bc:	e28a5e95 	add	r5, sl, #2384	; 0x950
+ 2c0:	e2855008 	add	r5, r5, #8
+ 2c4:	e1a00005 	mov	r0, r5
+ 2c8:	ebfffffe 	bl	0 <_ZN14CFATFileSystem5MountEP7CDevice>
+ 2cc:	e59f2194 	ldr	r2, [pc, #404]	; 468 <_ZN7CKernel3RunEv+0x1d0>
+ 2d0:	e28d300c 	add	r3, sp, #12
+ 2d4:	e8920007 	ldm	r2, {r0, r1, r2}
+ 2d8:	e8a30003 	stmia	r3!, {r0, r1}
+ 2dc:	e0c320b2 	strh	r2, [r3], #2
+ 2e0:	e1a02822 	lsr	r2, r2, #16
+ 2e4:	e5c32000 	strb	r2, [r3]
+ 2e8:	e1a00005 	mov	r0, r5
+ 2ec:	e28d100c 	add	r1, sp, #12
+ 2f0:	ebfffffe 	bl	0 <_ZN14CFATFileSystem10FileCreateEPKc>
+ 2f4:	e1a07000 	mov	r7, r0
+ 2f8:	e3a04000 	mov	r4, #0
+ 2fc:	e59f9168 	ldr	r9, [pc, #360]	; 46c <_ZN7CKernel3RunEv+0x1d4>
+ 300:	e59f8168 	ldr	r8, [pc, #360]	; 470 <_ZN7CKernel3RunEv+0x1d8>
+ 304:	e59fb168 	ldr	fp, [pc, #360]	; 474 <_ZN7CKernel3RunEv+0x1dc>
+ 308:	e28d0018 	add	r0, sp, #24
+ 30c:	ebfffffe 	bl	0 <_ZN7CStringC1Ev>
+ 310:	e28d0018 	add	r0, sp, #24
+ 314:	e1a01009 	mov	r1, r9
+ 318:	e5983000 	ldr	r3, [r8]
+ 31c:	e7932004 	ldr	r2, [r3, r4]
+ 320:	ebfffffe 	bl	0 <_ZN7CString6FormatEPKcz>
+ 324:	e28d0018 	add	r0, sp, #24
+ 328:	ebfffffe 	bl	0 <_ZNK7CStringcvPKcEv>
+ 32c:	e1a06000 	mov	r6, r0
+ 330:	e28d0018 	add	r0, sp, #24
+ 334:	ebfffffe 	bl	0 <_ZNK7CString9GetLengthEv>
+ 338:	e1a03000 	mov	r3, r0
+ 33c:	e1a00005 	mov	r0, r5
+ 340:	e1a01007 	mov	r1, r7
+ 344:	e1a02006 	mov	r2, r6
+ 348:	ebfffffe 	bl	0 <_ZN14CFATFileSystem9FileWriteEjPKvj>
+ 34c:	e1a06000 	mov	r6, r0
+ 350:	e28d0018 	add	r0, sp, #24
+ 354:	ebfffffe 	bl	0 <_ZNK7CString9GetLengthEv>
+ 358:	e1560000 	cmp	r6, r0
+ 35c:	1a000005 	bne	378 <_ZN7CKernel3RunEv+0xe0>
+ 360:	e28d0018 	add	r0, sp, #24
+ 364:	ebfffffe 	bl	0 <_ZN7CStringD1Ev>
+ 368:	e2844004 	add	r4, r4, #4
+ 36c:	e154000b 	cmp	r4, fp
+ 370:	1affffe4 	bne	308 <_ZN7CKernel3RunEv+0x70>
+ 374:	ea000001 	b	380 <_ZN7CKernel3RunEv+0xe8>
+ 378:	e28d0018 	add	r0, sp, #24
+ 37c:	ebfffffe 	bl	0 <_ZN7CStringD1Ev>
+ 380:	e1a00005 	mov	r0, r5
+ 384:	e1a01007 	mov	r1, r7
+ 388:	ebfffffe 	bl	0 <_ZN14CFATFileSystem9FileCloseEj>
+ 38c:	e59f20e4 	ldr	r2, [pc, #228]	; 478 <_ZN7CKernel3RunEv+0x1e0>
+ 390:	e1a0300d 	mov	r3, sp
+ 394:	e8920007 	ldm	r2, {r0, r1, r2}
+ 398:	e8a30003 	stmia	r3!, {r0, r1}
+ 39c:	e1c320b0 	strh	r2, [r3]
+ 3a0:	e1a00005 	mov	r0, r5
+ 3a4:	e1a0100d 	mov	r1, sp
+ 3a8:	ebfffffe 	bl	0 <_ZN14CFATFileSystem10FileCreateEPKc>
+ 3ac:	e1a07000 	mov	r7, r0
+ 3b0:	e3a04000 	mov	r4, #0
+ 3b4:	e59f90b0 	ldr	r9, [pc, #176]	; 46c <_ZN7CKernel3RunEv+0x1d4>
+ 3b8:	e59f80b0 	ldr	r8, [pc, #176]	; 470 <_ZN7CKernel3RunEv+0x1d8>
+ 3bc:	e59fb0b0 	ldr	fp, [pc, #176]	; 474 <_ZN7CKernel3RunEv+0x1dc>
+ 3c0:	e28d0018 	add	r0, sp, #24
+ 3c4:	ebfffffe 	bl	0 <_ZN7CStringC1Ev>
+ 3c8:	e28d0018 	add	r0, sp, #24
+ 3cc:	e1a01009 	mov	r1, r9
+ 3d0:	e5983004 	ldr	r3, [r8, #4]
+ 3d4:	e7932004 	ldr	r2, [r3, r4]
+ 3d8:	ebfffffe 	bl	0 <_ZN7CString6FormatEPKcz>
+ 3dc:	e28d0018 	add	r0, sp, #24
+ 3e0:	ebfffffe 	bl	0 <_ZNK7CStringcvPKcEv>
+ 3e4:	e1a06000 	mov	r6, r0
+ 3e8:	e28d0018 	add	r0, sp, #24
+ 3ec:	ebfffffe 	bl	0 <_ZNK7CString9GetLengthEv>
+ 3f0:	e1a03000 	mov	r3, r0
+ 3f4:	e1a00005 	mov	r0, r5
+ 3f8:	e1a01007 	mov	r1, r7
+ 3fc:	e1a02006 	mov	r2, r6
+ 400:	ebfffffe 	bl	0 <_ZN14CFATFileSystem9FileWriteEjPKvj>
+ 404:	e1a06000 	mov	r6, r0
+ 408:	e28d0018 	add	r0, sp, #24
+ 40c:	ebfffffe 	bl	0 <_ZNK7CString9GetLengthEv>
+ 410:	e1560000 	cmp	r6, r0
+ 414:	1a000005 	bne	430 <_ZN7CKernel3RunEv+0x198>
+ 418:	e28d0018 	add	r0, sp, #24
+ 41c:	ebfffffe 	bl	0 <_ZN7CStringD1Ev>
+ 420:	e2844004 	add	r4, r4, #4
+ 424:	e154000b 	cmp	r4, fp
+ 428:	1affffe4 	bne	3c0 <_ZN7CKernel3RunEv+0x128>
+ 42c:	ea000001 	b	438 <_ZN7CKernel3RunEv+0x1a0>
+ 430:	e28d0018 	add	r0, sp, #24
+ 434:	ebfffffe 	bl	0 <_ZN7CStringD1Ev>
+ 438:	e1a00005 	mov	r0, r5
+ 43c:	e1a01007 	mov	r1, r7
+ 440:	ebfffffe 	bl	0 <_ZN14CFATFileSystem9FileCloseEj>
+ 444:	e28a0e89 	add	r0, sl, #2192	; 0x890
+ 448:	e59f102c 	ldr	r1, [pc, #44]	; 47c <_ZN7CKernel3RunEv+0x1e4>
+ 44c:	e3a02004 	mov	r2, #4
+ 450:	e59f3028 	ldr	r3, [pc, #40]	; 480 <_ZN7CKernel3RunEv+0x1e8>
+ 454:	ebfffffe 	bl	0 <_ZN7CLogger5WriteEPKc12TLogSeverityS1_z>
+ 458:	e3a00001 	mov	r0, #1
+ 45c:	e28dd02c 	add	sp, sp, #44	; 0x2c
+ 460:	e8bd8ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
+ 464:	00000000 	.word	0x00000000
+ 468:	00000038 	.word	0x00000038
+ 46c:	00000008 	.word	0x00000008
+ 470:	00000000 	.word	0x00000000
+ 474:	001e8480 	.word	0x001e8480
+ 478:	00000044 	.word	0x00000044
+ 47c:	00000000 	.word	0x00000000
+ 480:	0000000c 	.word	0x0000000c
